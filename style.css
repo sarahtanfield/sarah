@@ -1,0 +1,84 @@
+:root {
+  --color-primary: #CCC;
+  --color-secondary: #888;
+  --color-tertiary: #333;
+
+  --size-columnPaddingMedium: 2vw; /* Asscoaited elements */
+  --size-columnPaddingLarge: 4vw; /* Seperate elements */
+
+  --size-radius: 10px;
+  --size-mainPadding: 100px;
+
+  --font-small: 2vw;
+  --font-small-min: 1em;
+  --font-small-max: 1.6em;
+  
+  --font-normal: 2.5vw;
+  --font-normal-min: 1.25em;
+  --font-normal-max: 2em;
+
+  --font-large: 4vw;
+  --font-large-min: 2em;
+  --font-large-max: 3.2em;
+}
+
+
+
+/* MAIN ELEMENTS */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: sans-serif;
+  font-weight: 100;
+  color: var(--color-primary);
+  background-color: #000 !important;
+}
+header {
+  padding: var(--size-columnPaddingLarge) var(--size-columnPaddingLarge) 0 var(--size-columnPaddingLarge);
+  font-size: var(--font-large);
+}
+main {
+  padding: var(--size-columnPaddingLarge) var(--size-columnPaddingLarge) 0 var(--size-columnPaddingLarge);
+}
+
+a {
+  color: var(--color-primary);
+}
+
+
+.containerFullImage > img {
+  margin-bottom: var(--size-columnPaddingLarge);
+}
+
+.imageFull {
+  height: 100%;
+  width: 100%;
+}
+
+
+.projectPanel {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: var(--size-columnPaddingMedium);
+  margin-bottom: var(--size-columnPaddingLarge);
+}
+
+.panelLeftFull {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+.panelImgRightUp {
+  grid-column: 2;
+  grid-row: 1;
+}
+.panelImgRightDown {
+  grid-column: 2;
+  grid-row: 2;
+}
+.panelImg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
