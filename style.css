@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #CCC;
+  --color-primary: #333;
   --color-secondary: #888;
-  --color-tertiary: #333;
+  --color-tertiary: #CCC;
   --color-background: #fff;
 
   --size-columnPaddingMedium: 2vw; /* Asscoaited elements */
