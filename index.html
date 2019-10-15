@@ -6,33 +6,41 @@
         <title>sarah tanfield</title>
         <meta name="author" content="Hamish MacDonald">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="lightbox.css">
     </head>
     <body>
+        <div class="lightbox"></div>
         <main>
             <nav>
                 Sarah Tanfield
             </nav>
             <div class="flexbin flexbin-margin">
-                <img src="media/jervois/000.jpg" />
-                <img src="media/jervois/001.jpg" />
-                <img src="media/jervois/002.jpg" />
-                <img src="media/jervois/006.jpg" />
-                <img src="media/jervois/003.jpg" />
-                <img src="media/jervois/004.jpg" />
-                <img src="media/jervois/005.jpg" />
-                <img src="media/jervois/007.jpg" />
-                <img src="media/jervois/008.jpg" />
-                <img src="media/honey/000.jpg" />
-                <img src="media/honey/001.jpg" />
-                <img src="media/honey/002.jpg" />
-                <img src="media/honey/003.jpg" />
-                <img src="media/honey/004.jpg" />
-                <img src="media/honey/005.jpg" />
-                <img src="media/honey/006.jpg" />
-                <img src="media/honey/007.jpg" />
-                <img src="media/honey/008.jpg" />
-                <img src="media/honey/009.jpg" />
+                <img src="media/jervois/000.jpg" onclick="lightbox.load('media/jervois/000.jpg')" />
+                <img src="media/jervois/001.jpg" onclick="lightbox.load('media/jervois/001.jpg')" />
+                <img src="media/jervois/002.jpg" onclick="lightbox.load('media/jervois/002.jpg')" />
+                <img src="media/jervois/006.jpg" onclick="lightbox.load('media/jervois/006.jpg')" />
+                <img src="media/jervois/003.jpg" onclick="lightbox.load('media/jervois/003.jpg')" />
+                <img src="media/jervois/004.jpg" onclick="lightbox.load('media/jervois/004.jpg')" />
+                <img src="media/jervois/005.jpg" onclick="lightbox.load('media/jervois/005.jpg')" />
+                <img src="media/jervois/007.jpg" onclick="lightbox.load('media/jervois/007.jpg')" />
+                <img src="media/jervois/008.jpg" onclick="lightbox.load('media/jervois/008.jpg')" />
+                <img src="media/honey/000.jpg" onclick="lightbox.load('media/honey/000.jpg')" />
+                <img src="media/honey/001.jpg" onclick="lightbox.load('media/honey/001.jpg')" />
+                <img src="media/honey/002.jpg" onclick="lightbox.load('media/honey/002.jpg')" />
+                <img src="media/honey/003.jpg" onclick="lightbox.load('media/honey/003.jpg')" />
+                <img src="media/honey/004.jpg" onclick="lightbox.load('media/honey/004.jpg')" />
+                <img src="media/honey/005.jpg" onclick="lightbox.load('media/honey/005.jpg')" />
+                <img src="media/honey/006.jpg" onclick="lightbox.load('media/honey/006.jpg')" />
+                <img src="media/honey/007.jpg" onclick="lightbox.load('media/honey/007.jpg')" />
+                <img src="media/honey/008.jpg" onclick="lightbox.load('media/honey/008.jpg')" />
+                <img src="media/honey/009.jpg" onclick="lightbox.load('media/honey/009.jpg')" />
             </div>
         </main>
+
+        <script src="lightbox.js"></script>
+        <script>
+            let lightbox = new Lightbox();
+            lightbox.install(document.querySelector('.lightbox'), 'lightbox');
+        </script>
     </body>
 </html>

@@ -48,13 +48,14 @@ nav {
   margin: var(--size-item-margin);
   flex-grow: 1; 
 }
-.flexbin > * > img {
+.flexbin > img {
   height: var(--size-grid-height);
   object-fit: cover;
-  max-width: 100%;
-  min-width: 100%;
   vertical-align: bottom;
   border-radius: var(--size-radius);
+}
+.flexbin > img:hover {
+  cursor: zoom-in;
 }
 .flexbin.flexbin-margin {
   margin: var(--size-item-margin);
