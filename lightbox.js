@@ -7,6 +7,7 @@ function Lightbox()
   {
     this.container = container;
     this.addEvent(this.container, 'click', function(){ lightbox.close(); });
+    this.container.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
 
     this.img = document.createElement('img');
     this.img.className = prefix + '-img';
@@ -17,7 +18,9 @@ function Lightbox()
   this.load = function(file)
   {
     this.img.src = file;
-  	this.container.style.display = 'block';
+    this.container.style.display = 'block';
+    
+    document.body.style.overflow='hidden';
   }
 
   this.close = function()
@@ -25,7 +28,9 @@ function Lightbox()
   	if (this.container.style.display != 'none')
   	{
   		this.container.style.display = 'none';
-  	}
+    }
+    
+    document.body.style.overflow='auto';
   }
 
   this.handle = function(element, file)
