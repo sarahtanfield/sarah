@@ -9,7 +9,9 @@
   --size-grid-height: 30vh;
 
   --font-normal: 2vw;
+  --font-normal-max: 2em;
   --font-large: 3vw;
+  --font-large-max: 2em;
 }
 
 * {
@@ -35,6 +37,20 @@ nav {
 header {
   font-size: var(--font-large);
   color: var(--color-primary);
+}
+
+/* SMALL SCREEN */
+@media only screen and (max-width: 768px) {
+  main {
+    grid-template-columns: auto;
+  }
+  menu {
+    font-size: var(--font-normal-max);
+    margin-bottom: var(--size-columnPaddingLarge);
+  }
+  header {
+    font-size: var(--font-large-max);
+  }
 }
 
 a {
