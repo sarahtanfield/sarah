@@ -7,7 +7,6 @@ function Lightbox()
   {
     this.container = container;
     this.addEvent(this.container, 'click', function(){ lightbox.close(); });
-    this.container.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
 
     this.img = document.createElement('img');
     this.img.className = prefix + '-img';
