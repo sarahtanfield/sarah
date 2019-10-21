@@ -2,9 +2,9 @@
 
 function Image(data)
 {
-  this.file       = data.file;
-  this.desc       = data.description;
-  this.proj       = data.project;
+  this.file        = data.file;
+  this.description = data.description;
+  this.projectCode = data.projectcode;
 
   this.commaSplit = function(data)
   {
@@ -20,11 +20,11 @@ function Image(data)
     return data;
   }
 
-  this.quality     = data.qf.length == 2 ? parseInt(data.qf.substr(0,1)) : 0;
-  this.focus       = data.qf.length == 2 ? data.qf.substr(1,1) : 0;
-  this.category    = this.commaSplit(data.category);
+  this.quality      = data.qf.length == 2 ? parseInt(data.qf.substr(0,1)) : 0;
+  this.focus        = data.qf.length == 2 ? data.qf.substr(1,1) : 0;
+  this.category     = this.commaSplit(data.category);
 
-  let imageAlign   = "";
+  let imageAlign    = "";
   if (this.focus == "T")
   {
     imageAlign = "photoTop ";

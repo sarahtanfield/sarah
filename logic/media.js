@@ -15,7 +15,7 @@ function Media()
 
   this.filterByProject = function(dataset, project)
   {
-    return dataset.filter(item => item.proj == project);
+    return dataset.filter(item => item.projectCode == project);
   }
 
   this.sortByQuality = function(dataset)

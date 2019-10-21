@@ -24,19 +24,24 @@ function Index()
 		if(target == '')
 		{
 			let result = ``;
-			for (let i = 0; i < this.media.db.length; i++)
+			let items = this.media.sortByQuality(this.media.db);
+			for (let i = 0; i < items.length; i++)
 			{
-				result += this.media.sortByQuality(this.media.db)[i].html(0);
+				result += items[i].html(0);
 			}
 			this.container.innerHTML = result;
 		}
-		else if (target == 'x')
-		{
-
-		}
 		else
 		{
-			console.log('Unhandled url');
+			let result = ``;
+			let items = this.media.sortByQuality(this.media.db);
+			items = this.media.filterByProject(items, target);
+
+			for (let i = 0; i < items.length; i++)
+			{
+				result += items[i].html(0);
+			}
+			this.container.innerHTML = result;
 		}
 	}
 }
