@@ -18,6 +18,11 @@ function Media()
     return dataset.filter(item => item.projectCode == project);
   }
 
+  this.filterByCategory = function(dataset, category)
+  {
+    return dataset.filter(item => item.category.includes(category));
+  }
+
   this.sortByQuality = function(dataset)
   {
     return dataset.sort(function(a,b) { return b.quality - a.quality; });
