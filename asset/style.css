@@ -36,7 +36,7 @@ main {
   margin-left: var(--size-columnPaddingLarge);
   margin-bottom: var(--size-columnPaddingLarge);
   margin-top: var(--size-columnPaddingLarge);
-  margin-right: var(--size-columnPaddingLarge);
+  margin-right: calc(var(--size-columnPaddingLarge) - var(--size-columnPaddingMedium));
 }
 menu {
   font-size: var(--font-normal);
@@ -67,19 +67,7 @@ p {
 }
 
 
-/* SMALL SCREEN */
-@media only screen and (max-width: 768px) {
-  main {
-    grid-template-columns: auto;
-  }
-  menu {
-    font-size: var(--font-normal-max);
-    margin-bottom: var(--size-columnPaddingLarge);
-  }
-  header {
-    font-size: var(--font-large-max);
-  }
-}
+
 
 a {
   text-decoration: none;
@@ -112,4 +100,31 @@ a:hover {
 }
 .flexbin > img:hover {
   cursor: zoom-in;
+}
+
+/* SMALL SCREEN */
+@media only screen and (max-width: 768px) {
+  main {
+    grid-template-columns: auto;
+    text-align: left;
+    margin-right: var(--size-columnPaddingLarge);
+  }
+  menu {
+    font-size: var(--font-normal-max);
+    margin-bottom: var(--size-columnPaddingLarge);
+    margin-right: 0;
+}
+  nav {
+    text-align: left;
+  }
+  header {
+    font-size: var(--font-large-max);
+    text-align: left;
+  }
+  .flexbin {
+    padding-top: 0;
+  }
+  .flexbin > * {
+    margin-right: 0;
+  }
 }
