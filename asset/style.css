@@ -1,11 +1,16 @@
 :root {
-  --color-primary: #333;
-  --color-background: #fff;
+  --color-primary: #30333c;
+  /* --color-primary: #26252b; */
+  --color-background: #fffefa;
 
+  --size-columnPaddingTiny: 2px;
+  --size-columnPaddingSmall: 10px;
+  --size-columnPaddingMedium: 20px;
   --size-columnPaddingLarge: 4vw;
 
+  --size-pageRight: 4vw;
+
   --size-menu-margin-fix: 5px;
-  --size-item-margin: 10px;
   --size-grid-height: 30vh;
 
   --font-normal: 2vw;
@@ -14,30 +19,53 @@
   --font-large-max: 2em;
 }
 
+
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
 }
 main {
   display: grid;
   grid-template-columns: 25vw auto;
   margin: 0;
   padding: 0;
+  margin-left: var(--size-columnPaddingLarge);
   margin-bottom: var(--size-columnPaddingLarge);
   margin-top: var(--size-columnPaddingLarge);
+  margin-right: var(--size-columnPaddingLarge);
 }
 menu {
   font-size: var(--font-normal);
-  color: var(--color-primary);
-  padding: var(--size-menu-margin-fix) 0 0 var(--size-columnPaddingLarge);
+  margin: 0;
+  margin-right: var(--size-columnPaddingLarge);
 }
 nav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   margin-top: var(--size-columnPaddingLarge);
+  text-align: right;
 }
 header {
+  transform: scale(1, 1.2);
+  font-family: 'Frank Ruhl Libre';
   font-size: var(--font-large);
   color: var(--color-primary);
+  text-align: right;
 }
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-bottom: var(--size-columnPaddingSmall);
+}
+p {
+  padding: 0;
+  margin-bottom: var(--size-columnPaddingTiny);
+}
+
 
 /* SMALL SCREEN */
 @media only screen and (max-width: 768px) {
@@ -66,18 +94,21 @@ a:hover {
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
+  padding-top: var(--size-menu-margin-fix);
 }
 .flexbin > * {
   position: relative;
   display: block;
   height: var(--size-grid-height);
-  margin: var(--size-item-margin);
+  margin-right: var(--size-columnPaddingMedium);
+  margin-bottom: var(--size-columnPaddingMedium);
   flex-grow: 1; 
 }
 .flexbin > img {
   height: var(--size-grid-height);
   object-fit: cover;
   vertical-align: bottom;
+  border-radius: 5px;
 }
 .flexbin > img:hover {
   cursor: zoom-in;
