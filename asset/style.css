@@ -47,7 +47,10 @@ nav {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   margin-top: var(--size-columnPaddingLarge);
-  text-align: right;
+  text-align: left;
+  display: block;
+  float: right;
+  clear: both;
 }
 header {
   transform: scale(1, 1.2);
