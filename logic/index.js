@@ -2,6 +2,7 @@ function Index()
 {
 	this.container = null;
 	this.media = null;
+	const INDEX_MEDIA = 6;
 
 	this.install = function()
 	{
@@ -21,17 +22,22 @@ function Index()
 		let hash = window.location.hash;
 		let target = hash ? hash.substr(1, hash.length - 1) : '';
 
-		if(target == '')
+		if(target == '' || target == 'clients' || target == 'contact' || target == 'about')
 		{
 			let result = ``;
 			let items = this.media.sortByQuality(this.media.db);
-			for (let i = 0; i < items.length; i++)
+			for (let i = 0; i < INDEX_MEDIA; i++)
 			{
 				result += items[i].html(0);
 			}
 			this.container.innerHTML = result;
+
+			document.getElementById("extras").style.display = "block";
+			document.getElementById("explain-publication").style.display = "none";
+			document.getElementById("explain-packaging").style.display = "none";
+			document.getElementById("explain-presentation").style.display = "none";
 		}
-		else if(target == 'one' || target == 'two' || target == 'three' || target == 'four')
+		else if(target == 'one' || target == 'two' || target == 'three')
 		{
 			let result = ``;
 			let items = this.media.sortByQuality(this.media.db);
@@ -41,6 +47,11 @@ function Index()
 				result += items[i].html(0);
 			}
 			this.container.innerHTML = result;
+			document.getElementById("extras").style.display = "none";
+
+			document.getElementById("explain-publication").style.display = (target == 'one') ? "block" : "none"; 
+			document.getElementById("explain-packaging").style.display = (target == 'two') ? "block" : "none"; 
+			document.getElementById("explain-presentation").style.display = (target == 'three') ? "block" : "none"; 
 		}
 		else
 		{
