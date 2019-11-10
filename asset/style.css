@@ -144,9 +144,6 @@ a:hover {
   border-color: var(--color-primary);
   background-color: var(--color-background);
   padding: var(--size-columnPaddingMedium);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: var(--font-normal);
   height: 20vh;
 }
 .contact textarea:focus, input:focus{
@@ -154,9 +151,6 @@ a:hover {
 }
 .contact input {
   display: block;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: var(--font-normal);
   background-color: var(--color-background);
   padding: var(--size-columnPaddingMedium);
   margin-top: var(--size-columnPaddingMedium);
@@ -179,6 +173,11 @@ a:hover {
   width: 50%;
   float: left;
   padding-left: var(--size-columnPaddingMedium);
+}
+
+.text-normal {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   font-size: var(--font-normal);
 }
 
@@ -196,15 +195,45 @@ a:hover {
 }
   nav {
     text-align: left;
+    float: left;
+    margin-bottom: var(--size-columnPaddingLarge);
   }
   header {
     font-size: var(--font-large-max);
     text-align: left;
+    margin-bottom: var(--size-columnPaddingLarge);
   }
   .flexbin {
     padding-top: 0;
   }
   .flexbin > * {
     margin-right: 0;
+  }
+
+  .logo {
+    height: 20vw;
+    width: 40vw;
+  }
+  .clients .logo:nth-child(even){
+    margin-right: 0px;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+  .about-text {
+    width: 100%;
+    padding-top: var(--size-columnPaddingMedium);
+    padding-left: 0;
+  }
+  .text-normal {
+    font-size: var(--font-normal-max);
+  }
+
+  .contact {
+    padding-bottom: var(--size-columnPaddingLarge);
+  }
+  .contact input {
+    width: 100%;
   }
 }
