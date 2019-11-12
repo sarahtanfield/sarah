@@ -182,9 +182,6 @@ a:hover {
   font-weight: 100;
   font-size: var(--font-normal);
 }
-.text-right {
-  text-align: right;
-}
 
 /* SMALL SCREEN */
 @media only screen and (max-width: 768px) {
