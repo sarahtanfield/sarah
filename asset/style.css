@@ -31,7 +31,7 @@
 body {
   background-color: var(--color-background);
   color: var(--color-primary);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
 }
 main {
@@ -51,23 +51,23 @@ menu {
   height: 100%;
 }
 nav {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   margin-top: var(--size-columnPaddingLarge);
-  text-align: left;
+  text-align: right;
   display: block;
   float: right;
   clear: both;
 }
 header {
   transform: scale(1, 1.2);
-  font-family: 'Frank Ruhl Libre';
+  font-family: 'Quicksand';
   font-size: var(--font-large);
   color: var(--color-primary);
   text-align: right;
 }
 .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   margin-bottom: var(--size-columnPaddingSmall);
 }
@@ -80,6 +80,9 @@ p {
 .explain-text {
   font-size: var(--font-normal);
   margin-bottom: var(--size-columnPaddingMedium);
+}
+.descript-text {
+  margin-top: var(--size-columnPaddingMedium);
 }
 
 
@@ -125,10 +128,10 @@ a:hover {
   clear: both;
 }
 .logo {
-  background-color: #000;
   height: 10vw;
   width: 20vw;
   margin: 0 var(--size-columnPaddingMedium) var(--size-columnPaddingMedium) 0;
+  object-fit: contain;
 }
 
 /* CONTACT */
@@ -170,15 +173,17 @@ a:hover {
   cursor: zoom-in;
 }
 .about-text {
-  width: 50%;
   float: left;
   padding-left: var(--size-columnPaddingMedium);
 }
 
 .text-normal {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 100;
   font-size: var(--font-normal);
+}
+.text-right {
+  text-align: right;
 }
 
 /* SMALL SCREEN */
