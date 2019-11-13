@@ -78,6 +78,14 @@ function Image(data)
       steps += `../`;
     }
 
-    return `<img src='${ steps }media/${ this.file }' class='${ imageAlign }' } onclick="lightbox.load('${ steps }media/${ this.file }')" />`;
+    let result = '';
+    result += `<div class='image-container'>`;
+    result += `<div class='image-overlay' onclick="lightbox.load('${ steps }media/${ this.file }')">`;
+    result += `<div class='image-desc'>Test test test test test test test test test test test test test test test test test test test test test </div>`;
+    result += `</div>`;
+    result += `<img src='${ steps }media/${ this.file }' class='${ imageAlign }' } onclick="lightbox.load('${ steps }media/${ this.file }')" />`;
+    result += `</div>`;
+
+    return result;
   }
 }

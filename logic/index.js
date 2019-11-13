@@ -33,9 +33,6 @@ function Index()
 			this.container.innerHTML = result;
 
 			document.getElementById("extras").style.display = "block";
-			document.getElementById("explain-publication").style.display = "none";
-			document.getElementById("explain-packaging").style.display = "none";
-			document.getElementById("explain-presentation").style.display = "none";
 		}
 		else if(target == 'one' || target == 'two' || target == 'three')
 		{
@@ -48,10 +45,6 @@ function Index()
 			}
 			this.container.innerHTML = result;
 			document.getElementById("extras").style.display = "none";
-
-			document.getElementById("explain-publication").style.display = (target == 'one') ? "block" : "none"; 
-			document.getElementById("explain-packaging").style.display = (target == 'two') ? "block" : "none"; 
-			document.getElementById("explain-presentation").style.display = (target == 'three') ? "block" : "none"; 
 		}
 		else
 		{

@@ -13,9 +13,10 @@
   --size-menu-margin-fix: 5px;
   --size-grid-height: 30vh;
 
+  --font-small: 1.4vw;
   --font-normal: 2vw;
   --font-normal-max: 2em;
-  --font-large: 3vw;
+  --font-large: 3.75vw;
   --font-large-max: 2em;
 
   --size-border: 10px;
@@ -36,7 +37,7 @@ body {
 }
 main {
   display: grid;
-  grid-template-columns: 25vw auto;
+  grid-template-columns: 30vw auto;
   margin: 0;
   padding: 0;
   margin-left: var(--size-columnPaddingLarge);
@@ -53,7 +54,7 @@ menu {
 nav {
   font-family: 'Quicksand', sans-serif;
   font-weight: 100;
-  margin-top: var(--size-columnPaddingLarge);
+  margin-top: var(--size-columnPaddingSmall);
   text-align: right;
   display: block;
   float: right;
@@ -65,6 +66,7 @@ header {
   font-size: var(--font-large);
   color: var(--color-primary);
   text-align: right;
+  font-weight: 400;
 }
 .title {
   font-family: 'Quicksand', sans-serif;
@@ -109,15 +111,44 @@ a:hover {
   margin-bottom: var(--size-columnPaddingMedium);
   flex-grow: 1; 
 }
-.flexbin > img {
+.image-container {
   height: var(--size-grid-height);
-  object-fit: cover;
   vertical-align: bottom;
   border-radius: var(--size-border);
+  background-color: #000;
 }
-.flexbin > img:hover {
+.image-container:hover {
   cursor: zoom-in;
 }
+.image-container:hover .image-overlay {
+  display: block;
+}
+.image-container img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--size-border);
+}
+.image-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--size-border);
+  vertical-align: bottom;
+}
+.image-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: var(--size-columnPaddingLarge);
+  color: var(--color-background);
+  font-size: var(--font-normal);
+}
+
  
 /* CLIENTS */
 .clients {
@@ -129,7 +160,7 @@ a:hover {
 }
 .logo {
   height: 10vw;
-  width: 15vw;
+  width: 10vw;
   margin: 0 var(--size-columnPaddingMedium) var(--size-columnPaddingMedium) 0;
   object-fit: contain;
 }
@@ -175,6 +206,9 @@ a:hover {
 .about-text {
   float: left;
   padding-left: var(--size-columnPaddingMedium);
+}
+.about-desc {
+  font-size: var(--font-small);
 }
 
 .text-normal {
