@@ -129,7 +129,7 @@ a:hover {
 }
 .logo {
   height: 10vw;
-  width: 20vw;
+  width: 15vw;
   margin: 0 var(--size-columnPaddingMedium) var(--size-columnPaddingMedium) 0;
   object-fit: contain;
 }
@@ -213,10 +213,16 @@ a:hover {
   }
 
   .logo {
-    height: 20vw;
-    width: 40vw;
+    height: 15vw;
+    width: 25vw;
   }
-  .clients .logo:nth-child(even){
+  .clients .logo:nth-child(3){
+    margin-right: 0px;
+  }
+  .clients .logo:nth-child(6){
+    margin-right: 0px;
+  }
+  .clients .logo:nth-child(9){
     margin-right: 0px;
   }
 
