@@ -13,7 +13,8 @@
   --size-menu-margin-fix: 5px;
   --size-grid-height: 30vh;
 
-  --font-small: 1.4vw;
+  --font-small: 1.5vw;
+  --font-small-max: 0.7em;
   --font-normal: 2vw;
   --font-normal-max: 2em;
   --font-large: 3.75vw;
@@ -228,11 +229,14 @@ a:hover {
     font-size: var(--font-normal-max);
     margin-bottom: var(--size-columnPaddingLarge);
     margin-right: 0;
-}
+  }
   nav {
     text-align: left;
     float: left;
     margin-bottom: var(--size-columnPaddingLarge);
+  }
+  .about-desc {
+    font-size: var(--font-small-max);
   }
   header {
     font-size: var(--font-large-max);
