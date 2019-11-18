@@ -81,7 +81,7 @@ function Image(data)
     let result = '';
     result += `<div class='image-container'>`;
     result += `<div class='image-overlay' onclick="lightbox.load('${ steps }media/${ this.file }')">`;
-    result += `<div class='image-desc'>Test test test test test test test test test test test test test test test test test test test test test </div>`;
+    result += `<div class='image-desc'>${ this.description }</div>`;
     result += `</div>`;
     result += `<img src='${ steps }media/${ this.file }' class='${ imageAlign }' } onclick="lightbox.load('${ steps }media/${ this.file }')" />`;
     result += `</div>`;
