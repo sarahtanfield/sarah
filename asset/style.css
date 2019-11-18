@@ -104,7 +104,7 @@ a:hover {
   flex-wrap: wrap;
   padding-top: var(--size-menu-margin-fix);
 }
-.flexbin > * {
+.flexbin > .image-container {
   position: relative;
   display: block;
   height: var(--size-grid-height);
@@ -113,6 +113,11 @@ a:hover {
   flex-grow: 1; 
 }
 .image-container {
+  width: 40%;
+  max-width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
   height: var(--size-grid-height);
   vertical-align: bottom;
   border-radius: var(--size-border);
@@ -123,12 +128,6 @@ a:hover {
 }
 .image-container:hover .image-overlay {
   display: block;
-}
-.image-container img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: var(--size-border);
 }
 .image-overlay {
   display: none;
