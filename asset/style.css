@@ -131,7 +131,7 @@ a:hover {
 }
 .image-overlay {
   display: none;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -146,7 +146,7 @@ a:hover {
   left: 0;
   padding: var(--size-columnPaddingLarge);
   color: var(--color-background);
-  font-size: var(--font-normal);
+  font-size: var(--font-small);
 }
 
  
