@@ -6,6 +6,10 @@ function Image(data)
   this.description = data.description;
   this.projectCode = data.projectcode;
 
+  this.description = this.description.replace(/"/g, '&quot;');
+  // this.description = this.description.replace(/'/g, '&#39;');
+  // this.description = this.description.replace(/'/, '&#39;');
+
   this.commaSplit = function(data)
   {
     if (data !== undefined)
@@ -79,8 +83,8 @@ function Image(data)
     }
 
     let result = '';
-    result += `<div class='image-container' style='background-image: url(${ steps }media/${ this.file })'>`;
-      result += `<div class='image-overlay' onclick="lightbox.load('${ steps }media/${ this.file }')">`;
+    result += `<div class='image-container' style='background-image: url(${steps}media/${ this.file })'>`;
+      result += `<div class='image-overlay' onclick="lightbox.load('${steps}media/${ this.file }','${ this.description.replace(/'/g, "\\'") }')">`;
         result += `<div class='image-desc'>${ this.description }</div>`;
       result += `</div>`;
     result += `</div>`;
