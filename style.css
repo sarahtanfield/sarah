@@ -5,8 +5,8 @@
 
   --size-columnPaddingTiny: 2px;
   --size-columnPaddingSmall: 10px;
-  --size-columnPaddingMedium: 2vw;
-  --size-columnPaddingLarge: 4vw;
+  --size-columnPaddingMedium: 0.75em;
+  --size-columnPaddingLarge: 1.5em;
 
   --size-pageRight: 4vw;
 
