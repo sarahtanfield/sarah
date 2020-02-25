@@ -13,12 +13,9 @@
   --size-menu-margin-fix: 5px;
   --size-grid-height: 30vh;
 
-  --font-small: 1.5vw;
-  --font-small-max: 0.7em;
-  --font-normal: 2vw;
-  --font-normal-max: 2em;
-  --font-large: 3.75vw;
-  --font-large-max: 2em;
+  --font-small: 0.7em;
+  --font-normal: 1.5em;
+  --font-large: 2em;
 
   --size-border: 10px;
 }
@@ -35,11 +32,11 @@ body {
   color: var(--color-primary);
   font-family: 'Quicksand', sans-serif;
   font-weight: 100;
+  font-size: var(--font-normal);
 }
 main {
   display: grid;
   grid-template-columns: auto;
-  /*grid-template-columns: 30vw auto;*/
   margin: 0;
   padding: 0;
   margin-left: var(--size-columnPaddingLarge);
@@ -48,31 +45,65 @@ main {
   margin-right: calc(var(--size-columnPaddingLarge) - var(--size-columnPaddingMedium));
 }
 menu {
-  font-size: var(--font-normal);
   margin: 0;
-  margin-right: var(--size-columnPaddingLarge);
   height: 100%;
-  display: none;
-}
-nav {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 100;
-  margin-top: var(--size-columnPaddingSmall);
-  text-align: right;
-  display: block;
-  float: right;
-  clear: both;
 }
 header {
-  transform: scale(1, 1.2);
-  font-family: 'Quicksand';
-  font-size: var(--font-large);
-  color: var(--color-primary);
-  text-align: right;
-  font-weight: 400;
+  text-align: left;
+  float: left;
 }
+nav {
+  font-weight: 100;
+  text-align: left;
+  float: right;
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    margin-top: var(--size-columnPaddingMedium);
+    float: left;
+    clear: both;
+  }
+}
+nav a {
+  margin-right: var(--size-columnPaddingMedium);
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+/* ABOUT */
+.about-test {
+  margin-bottom: var(--size-columnPaddingMedium);
+}
+.about-image {
+  width: 50%;
+  border-radius: var(--size-border);
+  float: left;
+  cursor: zoom-in;
+}
+.about-short {
+  clear: both;
+  float: left;
+  margin-top: var(--size-columnPaddingMedium);
+}
+.about-short p {
+  float: left;
+  clear: both;
+}
+.about-long {
+  clear: both;
+  float: left;
+  margin-top: var(--size-columnPaddingMedium);
+}
+.about-long p {
+  float: left;
+  clear: both;
+}
+
+
+
 .title {
-  font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   margin-bottom: var(--size-columnPaddingSmall);
 }
@@ -100,9 +131,18 @@ p {
 .marginTopLarge {
   margin-top: var(--size-columnPaddingLarge);
 }
+.marginBottomSmall {
+  margin-bottom: var(--size-columnPaddingSmall);
+}
+.marginBottomMedium {
+  margin-bottom: var(--size-columnPaddingMedium);
+}
+.marginBottomLarge {
+  margin-bottom: var(--size-columnPaddingLarge);
+}
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--color-primary);
 }
 a:hover {
@@ -111,22 +151,21 @@ a:hover {
 }
 
 #gallery {
+  margin-top: var(--size-columnPaddingMedium);
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
-  padding-top: var(--size-menu-margin-fix);
+  align-content: flex-start;
+  /*padding-top: var(--size-menu-margin-fix);*/
 }
-#gallery > .image-container {
+.image-container {
   position: relative;
   display: block;
   height: var(--size-grid-height);
   margin-right: var(--size-columnPaddingMedium);
   margin-bottom: var(--size-columnPaddingMedium);
-  flex-grow: 1; 
-}
-.image-container {
-  /*width: 40%;*/
-  max-width: 100%;
+  flex-basis: 350px;
+  flex-grow: 1;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -156,7 +195,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: var(--size-columnPaddingLarge);
+  padding: var(--size-columnPaddingMedium);
   color: var(--color-background);
   font-size: var(--font-small);
 }
@@ -170,15 +209,20 @@ a:hover {
 .clients {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: var(--size-columnPaddingLarge) calc(-1 * var(--size-columnPaddingMedium)) 0 calc(-1 * var(--size-columnPaddingMedium));
+  justify-content: flex-start;
   clear: both;
 }
 .logo {
-  height: 10vw;
-  width: 10vw;
+  height: 5vw;
+  width: 7vw;
   margin: 0 var(--size-columnPaddingMedium) var(--size-columnPaddingMedium) 0;
   object-fit: contain;
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    height: 10vw;
+    width: 16vw;
+  }
 }
 
 /* CONTACT */
@@ -207,20 +251,6 @@ a:hover {
   border-radius: var(--size-border);
   border-color: var(--color-primary);
   width: 20vw;
-}
-
-/* ABOUT */
-.about {
-  padding-top: var(--size-columnPaddingLarge);
-}
-.about-image {
-  width: 50%;
-  border-radius: var(--size-border);
-  float: left;
-  cursor: zoom-in;
-}
-.about-desc {
-  font-size: var(--font-small);
 }
 
 .text-normal {

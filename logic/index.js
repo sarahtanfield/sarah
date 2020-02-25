@@ -2,7 +2,7 @@ function Index()
 {
 	this.container = null;
 	this.media = null;
-	const INDEX_MEDIA = 6;
+	const INDEX_MEDIA = 8;
 
 	this.install = function()
 	{
