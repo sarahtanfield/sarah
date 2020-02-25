@@ -82,10 +82,20 @@ function Image(data)
       steps += `../`;
     }
 
+    let descriptionFormatted = ``;
+    if (this.description != '' && this.description != undefined)
+    {
+      descriptionFormatted = `<a href=#project-${this.projectCode}'>${ this.projectCode }</a> - ${ this.description.replace(/'/g, "\\'")}`;
+    }
+    else
+    {
+      descriptionFormatted = `<a href='#project-${this.projectCode}'>${ this.projectCode }</a>`;
+    }
+
     let result = '';
     result += `<div class='image-container' style='background-image: url(${steps}media/${ this.file })'>`;
-      result += `<div class='image-overlay' onclick="lightbox.load('${steps}media/${ this.file }','${ this.description.replace(/'/g, "\\'") }')">`;
-        result += `<div class='image-desc'>${ this.description }</div>`;
+      result += `<div class='image-overlay' onclick="lightbox.load('${steps}media/${ this.file }', '${ this.description }')">`;
+        result += `<div class='image-desc'>${ descriptionFormatted }</div>`;
       result += `</div>`;
     result += `</div>`;
 

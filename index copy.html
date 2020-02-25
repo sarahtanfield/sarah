@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>sarah tanfield</title>
+        <meta name="author" content="http://kor.nz">
+        <link rel="stylesheet" href="asset/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="lightbox"></div>
+        <main>
+            <menu>
+                <header><a href="#">Sarah Tanfield</a></header>
+                <nav>
+                    <p class="about-desc">Hand bookbinder and boxmaker</p>
+                    <p class="about-desc">Tāmaki Makaurau, New Zealand</p>
+                    <br>
+                    <p><a href="#one">Publication</a></p>
+                    <p><a href="#two">Packaging</a></p>
+                    <p><a href="#three">Presentation</a></p>
+                    <br>
+                    <p><a href="#clients">Clients</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                    <br>
+                    <p><a href="#about">About</a></p>
+                </nav>
+            </menu>
+
+            <div class="content">
+                <div class="flexbin">
+                </div>
+
+                <div id="extras">
+                    <div class="clients" id="clients">
+                        <img src="clients/anz.svg" class="logo"/>
+                        <img src="clients/cordis.png" class="logo" />
+                        <img src="clients/karenWalker.png" class="logo" />
+                        <img src="clients/landrover.png" class="logo" />
+                        <img src="clients/samsung.svg" class="logo" />
+                        <img src="clients/mercury.png" class="logo" />
+                        <img src="clients/raydar.svg" class="logo" />
+                        <img src="clients/meadowlark.png" class="logo" />
+                        <img src="clients/thelanding.svg" class="logo" />
+                        <img src="clients/toyota.png" class="logo" />
+                    </div>
+
+                    <div class="about" id="about">
+                        <div class="about-text text-normal">Working with photographers, designers, agencies, architects, poets, foodies, artists and small business owners to create custom and functional structural packaging, books and presentation materials.</div>
+                    </div>
+
+                    <form class="contact"  id="contact">
+                        <textarea id="subject" name="subject" class="text-normal" placeholder="send a message if you have questions about commissions"></textarea>
+                        <input class="text-normal" type="submit" value="send">
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <script src="logic/lib/lightbox.js"></script>
+        <script>
+            let lightbox = new Lightbox();
+            lightbox.install(document.querySelector('.lightbox'), 'lightbox');
+        </script>
+
+        <!-- JS -->
+        <script src="logic/lib/tablatal.js"></script>
+        <script src="media.tbtl"></script>
+        <script src="logic/index.js"></script>
+        <script src="logic/image.js"></script>
+        <script src="logic/media.js"></script>
+        <script>
+            var index = new Index();
+            index.install();
+            index.start();
+            window.addEventListener("hashchange", function() { index.load(); });
+        </script>
+        <!-- JS -->
+    </body>
+</html>

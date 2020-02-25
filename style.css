@@ -5,7 +5,7 @@
 
   --size-columnPaddingTiny: 2px;
   --size-columnPaddingSmall: 10px;
-  --size-columnPaddingMedium: 20px;
+  --size-columnPaddingMedium: 2vw;
   --size-columnPaddingLarge: 4vw;
 
   --size-pageRight: 4vw;
@@ -38,7 +38,8 @@ body {
 }
 main {
   display: grid;
-  grid-template-columns: 30vw auto;
+  grid-template-columns: auto;
+  /*grid-template-columns: 30vw auto;*/
   margin: 0;
   padding: 0;
   margin-left: var(--size-columnPaddingLarge);
@@ -51,6 +52,7 @@ menu {
   margin: 0;
   margin-right: var(--size-columnPaddingLarge);
   height: 100%;
+  display: none;
 }
 nav {
   font-family: 'Quicksand', sans-serif;
@@ -77,6 +79,7 @@ header {
 p {
   padding: 0;
   margin-bottom: var(--size-columnPaddingTiny);
+  float: left;
 }
 .content {
 }
@@ -88,6 +91,15 @@ p {
   margin-top: var(--size-columnPaddingMedium);
 }
 
+.marginTopSmall {
+  margin-top: var(--size-columnPaddingSmall);
+}
+.marginTopMedium {
+  margin-top: var(--size-columnPaddingMedium);
+}
+.marginTopLarge {
+  margin-top: var(--size-columnPaddingLarge);
+}
 
 a {
   text-decoration: none;
@@ -98,13 +110,13 @@ a:hover {
   color: var(--color-primary);
 }
 
-.flexbin {
+#gallery {
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
   padding-top: var(--size-menu-margin-fix);
 }
-.flexbin > .image-container {
+#gallery > .image-container {
   position: relative;
   display: block;
   height: var(--size-grid-height);
@@ -113,7 +125,7 @@ a:hover {
   flex-grow: 1; 
 }
 .image-container {
-  width: 40%;
+  /*width: 40%;*/
   max-width: 100%;
   overflow: hidden;
   background-size: cover;
@@ -147,6 +159,10 @@ a:hover {
   padding: var(--size-columnPaddingLarge);
   color: var(--color-background);
   font-size: var(--font-small);
+}
+.image-desc a {
+  color: var(--color-background);
+  text-decoration: underline;
 }
 
  
@@ -203,10 +219,6 @@ a:hover {
   float: left;
   cursor: zoom-in;
 }
-.about-text {
-  float: left;
-  padding-left: var(--size-columnPaddingMedium);
-}
 .about-desc {
   font-size: var(--font-small);
 }
@@ -216,73 +228,6 @@ a:hover {
   font-weight: 100;
   font-size: var(--font-normal);
 }
-
-/* SMALL SCREEN */
-@media only screen and (max-width: 768px) {
-  main {
-    grid-template-columns: auto;
-    text-align: left;
-    margin-right: var(--size-columnPaddingLarge);
-  }
-  menu {
-    font-size: var(--font-normal-max);
-    margin-bottom: var(--size-columnPaddingLarge);
-    margin-right: 0;
-  }
-  nav {
-    text-align: left;
-    float: left;
-    margin-bottom: var(--size-columnPaddingLarge);
-  }
-  .about-desc {
-    font-size: var(--font-small-max);
-  }
-  header {
-    font-size: var(--font-large-max);
-    text-align: left;
-    margin-bottom: var(--size-columnPaddingLarge);
-  }
-  .flexbin {
-    padding-top: 0;
-  }
-  .flexbin > * {
-    margin-right: 0;
-  }
-
-  .logo {
-    height: 15vw;
-    width: 25vw;
-  }
-  .clients .logo:nth-child(3){
-    margin-right: 0px;
-  }
-  .clients .logo:nth-child(6){
-    margin-right: 0px;
-  }
-  .clients .logo:nth-child(9){
-    margin-right: 0px;
-  }
-
-  .about-image {
-    width: 100%;
-  }
-  .about-text {
-    width: 100%;
-    padding-top: var(--size-columnPaddingMedium);
-    padding-left: 0;
-  }
-  .text-normal {
-    font-size: var(--font-normal-max);
-  }
-
-  .contact {
-    padding-bottom: var(--size-columnPaddingLarge);
-  }
-  .contact input {
-    width: 100%;
-  }
-}
-
 
 .lightbox {
   position: fixed;
