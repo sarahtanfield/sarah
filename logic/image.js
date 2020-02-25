@@ -85,11 +85,13 @@ function Image(data)
     let descriptionFormatted = ``;
     if (this.description != '' && this.description != undefined)
     {
-      descriptionFormatted = `<a href=#project-${this.projectCode}'>${ this.projectCode }</a> - ${ this.description.replace(/'/g, "\\'")}`;
+      // descriptionFormatted = `<a href=#project-${this.projectCode}'>${ this.projectCode }</a> - ${ this.description.replace(/'/g, "\\'")}`;
+      descriptionFormatted = `${ this.description.replace(/'/g, "\\'")}`;
     }
     else
     {
-      descriptionFormatted = `<a href='#project-${this.projectCode}'>${ this.projectCode }</a>`;
+      // descriptionFormatted = `<a href='#project-${this.projectCode}'>${ this.projectCode }</a>`;
+      descriptionFormatted = ``;
     }
 
     let result = '';
