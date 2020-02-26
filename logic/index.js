@@ -34,7 +34,17 @@ function Index()
 
 			document.getElementById("extras").style.display = "block";
 		}
-		else if(target == 'one' || target == 'two' || target == 'three')
+		else if(target == 'all')
+		{
+			let result = ``;
+			let items = this.media.sortByQuality(this.media.db);
+			for (let i = 0; i < items.length; i++)
+			{
+				result += items[i].html(0);
+			}
+			this.container.innerHTML = result;
+		}
+		else if(target == 'publication' || target == 'packaging' || target == 'presentation')
 		{
 			let result = ``;
 			let items = this.media.sortByQuality(this.media.db);
@@ -44,7 +54,6 @@ function Index()
 				result += items[i].html(0);
 			}
 			this.container.innerHTML = result;
-			document.getElementById("extras").style.display = "none";
 		}
 		else
 		{

@@ -7,81 +7,78 @@ F = Focus
   T Top
   0 to 9
 
-  one = book?
-  two = packaging?
   three = folder?
-  three = menu?
 */
 
 var MEDIA = `
-FILE                QF PROJECTCODE                 CATEGORY               DESCRIPTION                                                                                                                                                                                                                                                                                   END
-246Q_001.jpg        7C 246queen                    three                  This is information about this thing.
-246Q_002.jpg        8C 246queen                    one, two, three        Why a raven is like a writing desk?
-246Q_003.jpg        5C 246queen                    three                  Always take the initiative.
-246Q_004.jpg        7C 246queen                    two                    Ignite the fire within and explore unknown territory. 
-246Q_005.jpg        6C 246queen                    one                    Carry bolt cutters everywhere. 
-246Q_007.jpg        7C 246queen                    one                    The truth of a thing is in the feel of it, not the think of it.
-246Q_010.jpg        6C 246queen                    two, one               If you want to go quickly, go alone. If you want to go far, go together.
-246Q_011.jpg        6C 246queen                    three                  Educate yourself, so you can be part of the conversation.
-246Q_012.jpg        5C 246queen                    three                  Trust is a belief that someone is neither malicious or incompetent.
-246Q_013.jpg        6C 246queen                    three                  The cave you fear to enter holds the treasure you seek.
-246Q_014.jpg        5C 246queen                    three                  I think that Artists need to woman up. That they need to take their role more seriously.
-246Q_015.jpg        4C 246queen                    one                    Artists, I think that its a term is almost interchangable with magician.
-246Q_016.jpg        4C 246queen                    one                    The world is like a ride in an amusement park, and when you choose to go on it you think its real because thats how powerful our minds are.
-246Q_017.jpg        4C 246queen                    one                    What gets measured gets done.
-246Q_018.jpg        4C 246queen                    one                    What we design, will in turn design us back.
-246Q_019.jpg        7C 246queen                    three                  First we build the tools, then they build us.
-246Q_020.jpg        5C 246queen                    three                  Our thoughts shape our spaces and our spaces return the favour.
-246Q_021.jpg        6C 246queen                    three                  Just as you grow into the world, the world grows into you. Not only do you occupy a certain place, but that place, in turn, occupies you...
-246Q_022.jpg        7C 246queen                    two                    We have paleolithic emotions; medieval institutions; and god-like technology.
-246Q_023.jpg        3C 246queen                    two                    An interface is humane if it is responsive to human needs and considerate of human frailties. 
-246Q_024.jpg        8C 246queen                    two                    We live in capitalism. Its power seems inescapable. So did the divine right of kings. Any human power can be resisted and changed by human beings.
-aalto_000.jpg       8C aalto                       two                    Consciousness alone is.
-aalto_001.jpg       7C aalto                       two                    Happiness is a byproduct.
-aalto_002.jpg       6C aalto                       two                    My religion is kindness.
-aalto_003.jpg       6C aalto                       two                    Hedonic adaptation.
-aalto_004.jpg       6C aalto                       two                    Eselsbruecke.
-aalto_005.jpg       7C aalto                       two                    Gezellig.
-TTHC_000.jpg        8C rareHarvest                 two                    Eigengrau.
-TTHC_001.jpg        7C rareHarvest                 two                    Pain is motivation for change.
-TTHC_002.jpg        8C rareHarvest                 two                    The violence of organized forgetting.
-TTHC_003.jpg        8C rareHarvest                 two                    We do not ‘come into’ this world; we come out of it, as leaves from a tree. As the ocean ‘waves,’ the universe ‘peoples.’ Every individual is an expression of the whole realm of nature, a unique action of the total universe.
-TTHC_004.jpg        6C rareHarvest                 two                    The world is won by those who let it go.
-TTHC_006.jpg        4C rareHarvest                                        Simplicity, patience, compassion. These three are your greatest treasures.
-TTHC_007.jpg        4C rareHarvest                 two                    Deep play.
-TTHC_008.jpg        7C rareHarvest                 two                    If you know the way broadly you will see it in everything.
-TTHC_009.jpg        4C rareHarvest                                        Do you yearn to defend your own beliefs or to see the world as clearly as you possibly can?
-TTHC_010.jpg        7C rareHarvest                 two                    Life should be lived to the point of tears.
-TTHC_011.jpg        7C rareHarvest                 two                    Be here now.
-TTHC_012.jpg        6C rareHarvest                 two                    Have you tried writing down everything you know about everything?
-TTHC_013.jpg        6C rareHarvest                 two                    It is not the job of artists to give the audience what the audience wants. If the audience knew what they needed then they wouldn’t be audience, they would be the artists. It is the job of artists to give the audience what they need.
-TTHC_014.jpg        5C rareHarvest                 two                    But the dreamers of day are dangerous men. That they may act their dreams with open eyes to make it possible.
-TTHC_015.jpg        4C rareHarvest                 two                    As spirituality wanes, experience is the new faith and we are refuges from the mundane.
-TTHC_016.jpg        4C rareHarvest                 two                    But the origins of our knowledge and technology lie in the minds of men like the old Aborigine. He, and all those like him in tribal and ancient societies were accessing the magician energy.
-jervois_000.jpg     9C jervois                     one                    This sense of first sight unencumbered by knowingness.
-jervois_001.jpg     6C jervois                     one                    For a transitory enchanted moment man must have held his breath in the presence of this continent, compelled into an aesthetic contemplation he neither understood nor desired, face to face for the last time in history with something commensurate to his capacity for wonder.
-jervois_002.jpg     5C jervois                     one                    Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future.
-jervois_003.jpg     8C jervois                     one                    As we got farther and farther away, the Earth diminished in size. Finally it shrank to the size of a marble, the most beauitful marble you can imagine... seeing this has to change a man.
-jervois_004.jpg     5C jervois                     one                    We’re Solarpunks because the only other options are denial or despair.
-jervois_005.jpg     3C jervois                                            Look again at that dot. Thats here. Thats home. Thats us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.
-jervois_006.jpg     7C jervois                     one                    The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and
-jervois_008.jpg     3C jervois                                            father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species lived there—on a mote of dust suspended in a sunbeam.
-jervois_009.jpg     7C jervois                     three                  Many have stood their ground and faced the darkness when it comes for them. Fewer come for the darkness and force it to face them.
-jervois_010.jpg     5C jervois                     three                  Nature is not a place to visit. It is home.
-jervois_011.jpg     7C jervois                     three                  There is no justice in the laws of nature, no term for fairness in the equations of motion. The Universe is neither evil, nor good, it simply does not care. The stars dont care, or the Sun, or the sky. But they dont have to! WE care! There IS light in the world, and it is US!
-jervois_012.jpg     6C jervois                     three                  The way to extraordinary growth and changes often involes a fundamental ontological or lens shift in how you see the world. Magicians are wearing not just better, but fundamentally different shaped lenses to the rest of us. 
-outline_001.jpg     6C outline                     one                    And regardless of your skills and experience, it is likely that you are a magician to someone else.
-outline_002.jpg     6C outline                     one                    You are personally responsible for becoming more ethical than the society you grew up in.
-outline_004.jpg     4C outline                                            If you wish to build a ship, do not divide the men into teams and send them to the forest to cut wood. Instead, teach them to long for the vast and endless sea.
-outline_005.jpg     5C outline                     one                    Beauty will save the world.
-outline_006.jpg     5C outline                     one                    Anti-fragility: a property of systems that increase in capability, resilience, or robustness as a result of stressors, shocks, volatility, noise, mistakes, faults, attacks, or failures.
-outline_007.jpg     7C outline                     one                    Be in this world but not of it.
-outline_008.jpg     5C outline                     one                    The middle way of moderation, between the extremes of sensual indulgence and self-mortification.
-outline_009.jpg     5C outline                     one                    Setgeshgui.
-outline_010.jpg     5C outline                     one                    
-outline_011.jpg     6C outline                     one                    
-elephant_000.jpg    8C oldElephantHouse            three                 
-elephant_001.jpg    7C oldElephantHouse            three                  
-elephant_002.jpg    7C oldElephantHouse            three                  
-elephant_003.jpg    5C oldElephantHouse                                   
+FILE              QF PROJECTCODE       CATEGORY                             DESCRIPTION                                                                                                                                                                                                                                                                                   END
+246Q_001.jpg      7C 246queen          presentation                         This is information about this thing.
+246Q_002.jpg      8C 246queen          publication, packaging, presentation Why a raven is like a writing desk?
+246Q_003.jpg      5C 246queen          presentation                         Always take the initiative.
+246Q_004.jpg      7C 246queen          packaging                            Ignite the fire within and explore unknown territory. 
+246Q_005.jpg      6C 246queen          publication                          Carry bolt cutters everywhere. 
+246Q_007.jpg      7C 246queen          publication                          The truth of a thing is in the feel of it, not the think of it.
+246Q_010.jpg      6C 246queen          packaging, publication               If you want to go quickly, go alone. If you want to go far, go together.
+246Q_011.jpg      6C 246queen          presentation                         Educate yourself, so you can be part of the conversation.
+246Q_012.jpg      5C 246queen          presentation                         Trust is a belief that someone is neither malicious or incompetent.
+246Q_013.jpg      6C 246queen          presentation                         The cave you fear to enter holds the treasure you seek.
+246Q_014.jpg      5C 246queen          presentation                         I think that Artists need to woman up. That they need to take their role more seriously.
+246Q_015.jpg      4C 246queen          publication                          Artists, I think that its a term is almost interchangable with magician.
+246Q_016.jpg      4C 246queen          publication                          The world is like a ride in an amusement park, and when you choose to go on it you think its real because thats how powerful our minds are.
+246Q_017.jpg      4C 246queen          publication                          What gets measured gets done.
+246Q_018.jpg      4C 246queen          publication                          What we design, will in turn design us back.
+246Q_019.jpg      7C 246queen          presentation                         First we build the tools, then they build us.
+246Q_020.jpg      5C 246queen          presentation                         Our thoughts shape our spaces and our spaces return the favour.
+246Q_021.jpg      6C 246queen          presentation                         Just as you grow into the world, the world grows into you. Not only do you occupy a certain place, but that place, in turn, occupies you...
+246Q_022.jpg      7C 246queen          packaging                            We have paleolithic emotions; medieval institutions; and god-like technology.
+246Q_023.jpg      3C 246queen          packaging                            An interface is humane if it is responsive to human needs and considerate of human frailties. 
+246Q_024.jpg      8C 246queen          packaging                            We live in capitalism. Its power seems inescapable. So did the divine right of kings. Any human power can be resisted and changed by human beings.
+aalto_000.jpg     8C aalto             packaging                            Consciousness alone is.
+aalto_001.jpg     7C aalto             packaging                            Happiness is a byproduct.
+aalto_002.jpg     6C aalto             packaging                            My religion is kindness.
+aalto_003.jpg     6C aalto             packaging                            Hedonic adaptation.
+aalto_004.jpg     6C aalto             packaging                            Eselsbruecke.
+aalto_005.jpg     7C aalto             packaging                            Gezellig.
+TTHC_000.jpg      8C rareHarvest       packaging                            Eigengrau.
+TTHC_001.jpg      7C rareHarvest       packaging                            Pain is motivation for change.
+TTHC_002.jpg      8C rareHarvest       packaging                            The violence of organized forgetting.
+TTHC_003.jpg      8C rareHarvest       packaging                            We do not ‘come into’ this world; we come out of it, as leaves from a tree. As the ocean ‘waves,’ the universe ‘peoples.’ Every individual is an expression of the whole realm of nature, a unique action of the total universe.
+TTHC_004.jpg      6C rareHarvest       packaging                            The world is won by those who let it go.
+TTHC_006.jpg      4C rareHarvest                                            Simplicity, patience, compassion. These three are your greatest treasures.
+TTHC_007.jpg      4C rareHarvest       packaging                            Deep play.
+TTHC_008.jpg      7C rareHarvest       packaging                            If you know the way broadly you will see it in everything.
+TTHC_009.jpg      4C rareHarvest                                            Do you yearn to defend your own beliefs or to see the world as clearly as you possibly can?
+TTHC_010.jpg      7C rareHarvest       packaging                            Life should be lived to the point of tears.
+TTHC_011.jpg      7C rareHarvest       packaging                            Be here now.
+TTHC_012.jpg      6C rareHarvest       packaging                            Have you tried writing down everything you know about everything?
+TTHC_013.jpg      6C rareHarvest       packaging                            It is not the job of artists to give the audience what the audience wants. If the audience knew what they needed then they wouldn’t be audience, they would be the artists. It is the job of artists to give the audience what they need.
+TTHC_014.jpg      5C rareHarvest       packaging                            But the dreamers of day are dangerous men. That they may act their dreams with open eyes to make it possible.
+TTHC_015.jpg      4C rareHarvest       packaging                            As spirituality wanes, experience is the new faith and we are refuges from the mundane.
+TTHC_016.jpg      4C rareHarvest       packaging                            But the origins of our knowledge and technology lie in the minds of men like the old Aborigine. He, and all those like him in tribal and ancient societies were accessing the magician energy.
+jervois_000.jpg   9C jervois           publication                          This sense of first sight unencumbered by knowingness.
+jervois_001.jpg   6C jervois           publication                          For a transitory enchanted moment man must have held his breath in the presence of this continent, compelled into an aesthetic contemplation he neither understood nor desired, face to face for the last time in history with something commensurate to his capacity for wonder.
+jervois_002.jpg   5C jervois           publication                          Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future.
+jervois_003.jpg   8C jervois           publication                          As we got farther and farther away, the Earth diminished in size. Finally it shrank to the size of a marble, the most beauitful marble you can imagine... seeing this has to change a man.
+jervois_004.jpg   5C jervois           publication                          We’re Solarpunks because the only other options are denial or despair.
+jervois_005.jpg   3C jervois                                                Look again at that dot. Thats here. Thats home. Thats us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.
+jervois_006.jpg   7C jervois           publication                          The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and
+jervois_008.jpg   3C jervois                                                father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every superstar, every supreme leader, every saint and sinner in the history of our species lived there—on a mote of dust suspended in a sunbeam.
+jervois_009.jpg   7C jervois           presentation                         Many have stood their ground and faced the darkness when it comes for them. Fewer come for the darkness and force it to face them.
+jervois_010.jpg   5C jervois           presentation                         Nature is not a place to visit. It is home.
+jervois_011.jpg   7C jervois           presentation                         There is no justice in the laws of nature, no term for fairness in the equations of motion. The Universe is neither evil, nor good, it simply does not care. The stars dont care, or the Sun, or the sky. But they dont have to! WE care! There IS light in the world, and it is US!
+jervois_012.jpg   6C jervois           presentation                         The way to extraordinary growth and changes often involes a fundamental ontological or lens shift in how you see the world. Magicians are wearing not just better, but fundamentally different shaped lenses to the rest of us. 
+outline_001.jpg   6C outline           publication                          And regardless of your skills and experience, it is likely that you are a magician to someone else.
+outline_002.jpg   6C outline           publication                          You are personally responsible for becoming more ethical than the society you grew up in.
+outline_004.jpg   4C outline                                                If you wish to build a ship, do not divide the men into teams and send them to the forest to cut wood. Instead, teach them to long for the vast and endless sea.
+outline_005.jpg   5C outline           publication                          Beauty will save the world.
+outline_006.jpg   5C outline           publication                          Anti-fragility: a property of systems that increase in capability, resilience, or robustness as a result of stressors, shocks, volatility, noise, mistakes, faults, attacks, or failures.
+outline_007.jpg   7C outline           publication                          Be in this world but not of it.
+outline_008.jpg   5C outline           publication                          The middle way of moderation, between the extremes of sensual indulgence and self-mortification.
+outline_009.jpg   5C outline           publication                          Setgeshgui.
+outline_010.jpg   5C outline           publication            
+outline_011.jpg   6C outline           publication            
+elephant_000.jpg  8C oldElephantHouse  presentation          
+elephant_001.jpg  7C oldElephantHouse  presentation           
+elephant_002.jpg  7C oldElephantHouse  presentation           
+elephant_003.jpg  5C oldElephantHouse                                   
 `
