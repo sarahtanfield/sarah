@@ -6,7 +6,7 @@
   --size-columnPaddingTiny: 2px;
   --size-columnPaddingSmall: 10px;
   --size-columnPaddingMedium: 0.75em;
-  --size-columnPaddingLarge: 1.5em;
+  --size-columnPaddingLarge: 2.5em;
 
   --size-pageRight: 4vw;
 
@@ -223,7 +223,7 @@ a:hover {
 .logo {
   height: 5vw;
   width: 7vw;
-  margin: 0 var(--size-columnPaddingMedium) var(--size-columnPaddingMedium) 0;
+  margin: var(--size-columnPaddingMedium) var(--size-columnPaddingMedium) 0 0;
   object-fit: contain;
 }
 @media only screen and (max-width: 768px) {
@@ -302,7 +302,7 @@ a:hover {
   line-height: 200%;
   text-align: center;
   color: var(--color-background);
-  padding: var(--size-columnPaddingLarge);
+  padding: var(--size-columnPaddingMedium) var(--size-columnPaddingLarge) var(--size-columnPaddingMedium) var(--size-columnPaddingLarge);
   border-bottom-left-radius: var(--size-border);
   border-bottom-right-radius: var(--size-border);
 }
