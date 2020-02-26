@@ -82,35 +82,44 @@ function Index()
 
 		if (target == 'publication')
 		{
-			document.getElementById('publication').innerHTML=HEADER_PUBLICATION_STATIC;
-			document.getElementById('publication').className='navStatic';
+			document.getElementById('navPublication').innerHTML=HEADER_PUBLICATION_STATIC;
+			document.getElementById('navPublication').className='navStatic';
 		}
 		else
 		{
-			document.getElementById('publication').innerHTML=HEADER_PUBLICATION_LINK;
-			document.getElementById('publication').className='nav';
+			document.getElementById('navPublication').innerHTML=HEADER_PUBLICATION_LINK;
+			document.getElementById('navPublication').className='nav';
 		}
 
 		if (target == 'packaging')
 		{
-			document.getElementById('packaging').innerHTML=HEADER_PACKAGING_STATIC;
-			document.getElementById('packaging').className='navStatic';
+			document.getElementById('navPackaging').innerHTML=HEADER_PACKAGING_STATIC;
+			document.getElementById('navPackaging').className='navStatic';
 		}
 		else
 		{
-			document.getElementById('packaging').innerHTML=HEADER_PACKAGING_LINK;
-			document.getElementById('packaging').className='nav';
+			document.getElementById('navPackaging').innerHTML=HEADER_PACKAGING_LINK;
+			document.getElementById('navPackaging').className='nav';
 		}
 
 		if (target == 'presentation')
 		{
-			document.getElementById('presentation').innerHTML=HEADER_PRESENTATION_STATIC;
-			document.getElementById('presentation').className='navStatic';
+			document.getElementById('navPresentation').innerHTML=HEADER_PRESENTATION_STATIC;
+			document.getElementById('navPresentation').className='navStatic';
 		}
 		else
 		{
-			document.getElementById('presentation').innerHTML=HEADER_PRESENTATION_LINK;
-			document.getElementById('presentation').className='nav';
+			document.getElementById('navPresentation').innerHTML=HEADER_PRESENTATION_LINK;
+			document.getElementById('navPresentation').className='nav';
+		}
+
+		if (target == 'all')
+		{
+			document.getElementById('navAll').style.display='none';
+		}
+		else
+		{
+			document.getElementById('navAll').style.display='inline';
 		}
 	}
 }
