@@ -64,8 +64,12 @@ nav {
     clear: both;
   }
 }
-nav a {
+.nav {
   margin-right: var(--size-columnPaddingMedium);
+}
+.navStatic {
+  margin-right: var(--size-columnPaddingMedium);
+  font-weight: 600;
 }
 
 .font-bold {
