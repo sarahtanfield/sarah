@@ -197,11 +197,15 @@ a:hover {
 }
 .image-desc {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: var(--size-columnPaddingMedium);
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  padding: var(--size-columnPaddingLarge);
+  line-height: 200%;
   color: var(--color-background);
   font-size: var(--font-small);
+
 }
 .image-desc a {
   color: var(--color-background);
@@ -295,8 +299,10 @@ a:hover {
 .lightbox-desc {
   background-color: #000;
   font-size: 20px;
+  line-height: 200%;
+  text-align: center;
   color: var(--color-background);
-  padding: var(--size-columnPaddingMedium);
+  padding: var(--size-columnPaddingLarge);
   border-bottom-left-radius: var(--size-border);
   border-bottom-right-radius: var(--size-border);
 }
