@@ -42,10 +42,11 @@ main {
   margin-left: var(--size-columnPaddingLarge);
   margin-bottom: var(--size-columnPaddingLarge);
   margin-top: var(--size-columnPaddingLarge);
-  margin-right: calc(var(--size-columnPaddingLarge) - var(--size-columnPaddingMedium));
+  margin-right: var(--size-columnPaddingLarge);
 }
 menu {
   margin: 0;
+  padding: 0;
   height: 100%;
 }
 header {
@@ -56,6 +57,7 @@ nav {
   font-weight: 100;
   text-align: left;
   float: right;
+  margin-right: calc(-1 * var(--size-columnPaddingMedium));
 }
 @media only screen and (max-width: 768px) {
   nav {
@@ -103,6 +105,7 @@ nav {
 .about-long p {
   float: left;
   clear: both;
+  margin-bottom: var(--size-columnPaddingMedium);
 }
 
 
@@ -144,6 +147,9 @@ p {
 .marginBottomLarge {
   margin-bottom: var(--size-columnPaddingLarge);
 }
+.marginLeftMedium {
+  margin-left: var(--size-columnPaddingMedium);
+}
 
 a {
   text-decoration: underline;
@@ -156,6 +162,7 @@ a:hover {
 
 #gallery {
   margin-top: var(--size-columnPaddingMedium);
+  margin-right: calc(-1 * var(--size-columnPaddingMedium));
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;

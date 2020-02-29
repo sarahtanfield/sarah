@@ -76,7 +76,7 @@ function Index()
 		else
 		{
 			document.getElementById('header').innerHTML=HEADER_MAIN_LINK;
-			document.getElementById('header').className='nav';
+			document.getElementById('header').className='';
 
 		}
 
