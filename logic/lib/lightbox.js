@@ -4,22 +4,23 @@ function Lightbox()
   this.main = null;
   this.img = null;
   this.desc = null;
+  this.prefix = null;
 
   this.install = function(main, prefix)
   {
     this.main = main;
+    this.prefix = prefix;
     this.addEvent(this.main, 'click', function(){ lightbox.close(); });
 
     this.container = document.createElement('div');
-    this.container.className = prefix + '-container';
+    this.container.className = this.prefix + '-container';
 
     this.img = document.createElement('img');
-    this.img.className = prefix + '-img';
     this.addEvent(this.img, 'click', function(){ lightbox.close(); });
     this.container.appendChild(this.img);
 
     this.desc = document.createElement('div');
-    this.desc.className = prefix + '-desc';
+    this.desc.className = this.prefix + '-desc';
     this.container.appendChild(this.desc);
 
     this.main.appendChild(this.container);
@@ -33,10 +34,12 @@ function Lightbox()
     {
       this.desc.innerHTML = desc;
       this.desc.style.display = 'block';
+      this.img.className = this.prefix + '-img topRadius';
     }
     else
     {
       this.desc.style.display = 'none';
+      this.img.className = this.prefix + '-img fullRadius';
     }
     this.main.style.display = 'block';
     

@@ -300,8 +300,13 @@ a:hover {
 .lightbox-img {
   max-height: 80vh;
   max-width: 100vw;
+}
+.topRadius {
   border-top-left-radius: var(--size-border);
   border-top-right-radius: var(--size-border);
+}
+.fullRadius {
+  border-radius: var(--size-border);
 }
 .lightbox-desc {
   background-color: #000;
