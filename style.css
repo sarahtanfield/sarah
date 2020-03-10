@@ -39,10 +39,7 @@ main {
   grid-template-columns: auto;
   margin: 0;
   padding: 0;
-  margin-left: var(--size-columnPaddingLarge);
-  margin-bottom: var(--size-columnPaddingLarge);
-  margin-top: var(--size-columnPaddingLarge);
-  margin-right: var(--size-columnPaddingLarge);
+  margin: var(--size-columnPaddingLarge);
 }
 menu {
   margin: 0;
@@ -73,6 +70,10 @@ nav {
     clear: both;
   }
   .nav {
+    float: left;
+    clear: both;
+  }
+  .navStatic {
     float: left;
     clear: both;
   }
