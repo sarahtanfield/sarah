@@ -59,19 +59,23 @@ nav {
   float: right;
   margin-right: calc(-1 * var(--size-columnPaddingMedium));
 }
-@media only screen and (max-width: 768px) {
-  nav {
-    margin-top: var(--size-columnPaddingMedium);
-    float: left;
-    clear: both;
-  }
-}
 .nav {
   margin-right: var(--size-columnPaddingMedium);
 }
 .navStatic {
   margin-right: var(--size-columnPaddingMedium);
   font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    margin-top: var(--size-columnPaddingMedium);
+    float: left;
+    clear: both;
+  }
+  .nav {
+    float: left;
+    clear: both;
+  }
 }
 
 .font-bold {
