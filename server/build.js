@@ -41,6 +41,13 @@ fs.copyFile(path.join(directorySource, `style.css`), path.join(directoryOutput, 
   if (err) throw err;
 });
 
+// Copy lightbox js
+fs.mkdirSync(path.join(directoryOutput, `logic`));
+fs.mkdirSync(path.join(directoryOutput, `logic/lib`));
+fs.copyFile(path.join(directorySource, `logic/lib/lightbox.js`), path.join(directoryOutput, `logic/lib/lightbox.js`), (err) => {
+  if (err) throw err;
+});
+
 // Copy file that declares 'BUILD = true' in webapp which is used by inline.js to change how internal links work (not hash linking for webapp but root-relative url changes)
 fs.copyFile(path.join(__dirname, `true-build.js`), path.join(__dirname, `../site/build.js`), (err) => {
   if (err) throw err;
