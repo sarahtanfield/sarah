@@ -8,6 +8,37 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
+        <script>
+            document.addEventListener('click', function (event) {
+
+            // Check if clicked image-container
+            let container =  null;
+            if (event.target.parentElement.parentElement.matches('.image-container'))
+            {
+                container = event.target.parentElement.parentElement;
+            }
+            else if (event.target.parentElement.matches('.image-container'))
+            {
+                container = event.target.parentElement;
+            }
+            else if (event.target.matches('.image-container'))
+            {
+                container = event.target;
+            }
+
+            if (container != null)
+            {
+                // Don't follow the link
+                event.preventDefault();
+
+                // Log the clicked element in the console
+                var item = container.getAttribute('lightbox');
+                var desc = container.getAttribute('lightbox-desc');
+                console.log(item + ' - ' + desc);
+                lightbox.load('media/'+item,desc);
+            }
+        }, false);
+        </script>
     </head>
     <body>
         <div class="lightbox"></div>

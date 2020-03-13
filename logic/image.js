@@ -95,8 +95,8 @@ function Image(data)
     }
 
     let result = '';
-    result += `<div class='image-container' style='background-image: url(${steps}media/${ this.file })'>`;
-      result += `<div class='image-overlay' onclick="lightbox.load('${steps}media/${ this.file }', '${ this.description }')">`;
+    result += `<div class='image-container' style='background-image: url(${steps}media/${ this.file })' lightbox='${ this.file }' lightbox-desc='${ this.description }'>`;
+      result += `<div class='image-overlay'>`;
         result += `<div class='image-desc'>${ descriptionFormatted }</div>`;
       result += `</div>`;
     result += `</div>`;
