@@ -355,6 +355,7 @@ a:hover {
   max-width: 50%;
   width: 50%;
   height: 100%;
+  cursor: w-resize;
 }
 .lightbox-right {
   background-color: rgba(255,0255,0255,0.8);
@@ -365,4 +366,5 @@ a:hover {
   max-width: 50%;
   width: 50%;
   height: 100%;
+  cursor: e-resize;
 }
