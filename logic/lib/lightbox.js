@@ -3,21 +3,42 @@ function Lightbox()
   this.container = null;
   this.main = null;
   this.img = null;
+  this.imgContainer = null;
   this.desc = null;
   this.prefix = null;
+  this.left = null;
+  this.right = null;
+  this.black = null;
 
   this.install = function(main, prefix)
   {
     this.main = main;
     this.prefix = prefix;
-    this.addEvent(this.main, 'click', function(){ lightbox.close(); });
+
+    this.black = document.createElement('div');
+    this.black.className = this.prefix + '-close';
+    this.main.appendChild(this.black);
+    this.addEvent(this.black, 'click', function(){ lightbox.close(); });
 
     this.container = document.createElement('div');
     this.container.className = this.prefix + '-container';
 
+    this.imgContainer = document.createElement('div');
+    this.imgContainer.className = this.prefix + '-imgContainer';
+    this.container.appendChild(this.imgContainer);
+    
     this.img = document.createElement('img');
-    this.addEvent(this.img, 'click', function(){ lightbox.close(); });
-    this.container.appendChild(this.img);
+    // this.addEvent(this.img, 'click', function(){ lightbox.close(); });
+    this.imgContainer.appendChild(this.img);
+
+    this.left = document.createElement('div');
+    this.left.className = this.prefix + '-left';
+    this.imgContainer.appendChild(this.left);
+    this.addEvent(this.left, 'click', function(){ console.log('left'); });
+    this.right = document.createElement('div');
+    this.right.className = this.prefix + '-right';
+    this.imgContainer.appendChild(this.right);
+    this.addEvent(this.right, 'click', function(){ console.log('right'); });
 
     this.desc = document.createElement('div');
     this.desc.className = this.prefix + '-desc';
