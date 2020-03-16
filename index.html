@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
         <script>
+            // ADD LIGHTBOX VARS HERE
+
             document.addEventListener('click', function (event) {
 
             // Check if clicked image-container
@@ -31,11 +33,14 @@
                 // Don't follow the link
                 event.preventDefault();
 
+                // TODO here figure out what page is open somehow and select correct list of items
+                let items = index.getItemsAll();
+
                 // Log the clicked element in the console
                 var item = container.getAttribute('lightbox');
                 var desc = container.getAttribute('lightbox-desc');
                 console.log(item + ' - ' + desc);
-                lightbox.load('media/'+item,desc);
+                lightbox.load('media/'+item,desc,items);
             }
         }, false);
         </script>
