@@ -34,13 +34,12 @@
                 event.preventDefault();
 
                 // TODO here figure out what page is open somehow and select correct list of items
-                let items = index.getItemsAll();
+                let items = index.getItemsHome();
 
                 // Log the clicked element in the console
-                var item = container.getAttribute('lightbox');
+                var fileLocation = container.getAttribute('lightbox');
                 var desc = container.getAttribute('lightbox-desc');
-                console.log(item + ' - ' + desc);
-                lightbox.load('media/'+item,desc,items);
+                lightbox.load(fileLocation,desc,items);
             }
         }, false);
         </script>

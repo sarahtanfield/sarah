@@ -72,20 +72,31 @@ function Lightbox()
     document.body.style.overflow='hidden';
   }
 
+  this.giveIdOfElementInArray = function(element, array)
+  {
+    for (let i = 0; i < array.length; i++) 
+    {
+      if (element == array[i].fileLocation)
+      {
+        return i;
+        
+      }
+    }
+    return -1;
+  }
+
   this.navLeft = function()
   {
-    console.log('left');
-    console.log(itemCurrent);
-    console.log(itemList);
-    // TODO: find itemCurrent in itemList, load prev
+    let target = lightbox.giveIdOfElementInArray(itemCurrent, itemList);
+    target = (target-1 < 0) ? itemList.length-1 : target-1;
+    lightbox.load(itemList[target].fileLocation, itemList[target].description, itemList);
   }
 
   this.navRight = function()
   {
-    console.log('right');
-    console.log(itemCurrent);
-    console.log(itemList);
-    // TODO: find itemCurrent in itemList, load next
+    let target = lightbox.giveIdOfElementInArray(itemCurrent, itemList);
+    target = (target+1 == itemList.length) ? 0 : target+1;
+    lightbox.load(itemList[target].fileLocation, itemList[target].description, itemList);
   }
 
   this.close = function()
