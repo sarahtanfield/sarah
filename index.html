@@ -35,12 +35,29 @@
 
                 // TODO here figure out what page is open somehow and select correct list of items
                 let items = index.getItemsHome();
+		        let hash = window.location.hash;
+                if (hash == `#publication`)
+                {
+                    items = index.getItemsPublication();
+                }
+                else if (hash == `#packaging`)
+                {
+                    items = index.getItemsPackaging();
+                }
+                else if (hash == `#presentation`)
+                {
+                    items = index.getItemsPresentation();
+                }
+                else if (hash == `#all`)
+                {
+                    items = index.getItemsAll();
+                }
 
                 // Log the clicked element in the console
                 var fileLocation = container.getAttribute('lightbox');
                 var desc = container.getAttribute('lightbox-desc');
                 lightbox.load(fileLocation,desc,items);
-            }
+            } 
         }, false);
         </script>
     </head>

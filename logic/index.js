@@ -26,7 +26,6 @@ function Index()
 	this.install = function()
 	{
 		this.container = document.querySelector('#gallery');
-
 		this.media = new Media();
 		this.media.install();
 	}
