@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
         <script>
-            // ADD LIGHTBOX VARS HERE
+            // TODO: BUILD PUTS LIGHTBOX ALBUM VARS HERE
 
             document.addEventListener('click', function (event) {
 
@@ -33,30 +33,33 @@
                 // Don't follow the link
                 event.preventDefault();
 
-                // TODO here figure out what page is open somehow and select correct list of items
+                // TODO: here figure out what page is open somehow (in build) and select correct list of album items
                 let items = index.getItemsHome();
 		        let hash = window.location.hash;
                 if (hash == `#publication`)
                 {
+                    // USE LIGHTBOX ALBUM VARS NOT BELOW
                     items = index.getItemsPublication();
                 }
                 else if (hash == `#packaging`)
                 {
+                    // USE LIGHTBOX ALBUM VARS NOT BELOW
                     items = index.getItemsPackaging();
                 }
                 else if (hash == `#presentation`)
                 {
+                    // USE LIGHTBOX ALBUM VARS NOT BELOW
                     items = index.getItemsPresentation();
                 }
                 else if (hash == `#all`)
                 {
+                    // USE LIGHTBOX ALBUM VARS NOT BELOW
                     items = index.getItemsAll();
                 }
 
-                // Log the clicked element in the console
                 var fileLocation = container.getAttribute('lightbox');
                 var desc = container.getAttribute('lightbox-desc');
-                lightbox.load(fileLocation,desc,items);
+                lightbox.load(fileLocation, desc, items);
             } 
         }, false);
         </script>
