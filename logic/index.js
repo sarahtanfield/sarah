@@ -3,14 +3,14 @@ function Index()
 	this.container = null;
 	this.media = null;
 	const INDEX_MEDIA = 8;
-	const HEADER_MAIN_STATIC = 'Sarah Tanfield';
-	const HEADER_MAIN_LINK = '<a href="#">Sarah Tanfield</a>';
-	const HEADER_PUBLICATION_STATIC = 'Publication';
-	const HEADER_PUBLICATION_LINK = '<a href="#publication">Publication</a>';
-	const HEADER_PACKAGING_STATIC = 'Packaging';
-	const HEADER_PACKAGING_LINK = '<a href="#packaging">Packaging</a>';
-	const HEADER_PRESENTATION_STATIC = 'Presentation';
-	const HEADER_PRESENTATION_LINK = '<a href="#presentation">Presentation</a>';
+	const HEADER_MAIN_STATIC = 'sarah tanfield';
+	const HEADER_MAIN_LINK = '<a href="#">sarah tanfield</a>';
+	const HEADER_PUBLICATION_STATIC = 'publication';
+	const HEADER_PUBLICATION_LINK = '<a href="#publication">publication</a>';
+	const HEADER_PACKAGING_STATIC = 'packaging';
+	const HEADER_PACKAGING_LINK = '<a href="#packaging">packaging</a>';
+	const HEADER_PRESENTATION_STATIC = 'presentation';
+	const HEADER_PRESENTATION_LINK = '<a href="#presentation">presentation</a>';
 
 	let itemsAll = null;
 	this.getItemsAll = function(){ return itemsAll; }
