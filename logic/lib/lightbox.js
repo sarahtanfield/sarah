@@ -10,6 +10,9 @@ function Lightbox()
   this.right = null;
   this.black = null;
 
+  itemList = null;
+  itemCurrent = null;
+
   this.install = function(main, prefix)
   {
     this.main = main;
@@ -34,11 +37,11 @@ function Lightbox()
     this.left = document.createElement('div');
     this.left.className = this.prefix + '-left';
     this.imgContainer.appendChild(this.left);
-    this.addEvent(this.left, 'click', function(){ console.log('left'); });
+    this.addEvent(this.left, 'click', this.navLeft);
     this.right = document.createElement('div');
     this.right.className = this.prefix + '-right';
     this.imgContainer.appendChild(this.right);
-    this.addEvent(this.right, 'click', function(){ console.log('right'); });
+    this.addEvent(this.right, 'click', this.navRight);
 
     this.desc = document.createElement('div');
     this.desc.className = this.prefix + '-desc';
@@ -47,9 +50,11 @@ function Lightbox()
     this.main.appendChild(this.container);
   }
 
-  this.load = function(file, desc)
+  this.load = function(file, desc, list)
   {
     this.img.src = file;
+    itemCurrent = file;
+    itemList = list;
 
     if (desc != '' && desc != undefined)
     {
@@ -65,6 +70,33 @@ function Lightbox()
     this.main.style.display = 'block';
     
     document.body.style.overflow='hidden';
+  }
+
+  this.giveIdOfElementInArray = function(element, array)
+  {
+    for (let i = 0; i < array.length; i++) 
+    {
+      if (element == array[i].fileLocation)
+      {
+        return i;
+        
+      }
+    }
+    return -1;
+  }
+
+  this.navLeft = function()
+  {
+    let target = lightbox.giveIdOfElementInArray(itemCurrent, itemList);
+    target = (target-1 < 0) ? itemList.length-1 : target-1;
+    lightbox.load(itemList[target].fileLocation, itemList[target].description, itemList);
+  }
+
+  this.navRight = function()
+  {
+    let target = lightbox.giveIdOfElementInArray(itemCurrent, itemList);
+    target = (target+1 == itemList.length) ? 0 : target+1;
+    lightbox.load(itemList[target].fileLocation, itemList[target].description, itemList);
   }
 
   this.close = function()

@@ -347,7 +347,7 @@ a:hover {
   }
 }
 .lightbox-left {
-  background-color: rgba(0,0,0,0.8);
+  /* background-color: rgba(0,0,0,0.8); */
   position: absolute;
   top: 50%;
   left: 0;
@@ -355,9 +355,10 @@ a:hover {
   max-width: 50%;
   width: 50%;
   height: 100%;
+  cursor: w-resize;
 }
 .lightbox-right {
-  background-color: rgba(255,0255,0255,0.8);
+  /* background-color: rgba(255,0255,0255,0.8); */
   position: absolute;
   top: 50%;
   right: 0;
@@ -365,4 +366,5 @@ a:hover {
   max-width: 50%;
   width: 50%;
   height: 100%;
+  cursor: e-resize;
 }

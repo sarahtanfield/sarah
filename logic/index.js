@@ -12,16 +12,31 @@ function Index()
 	const HEADER_PRESENTATION_STATIC = 'Presentation';
 	const HEADER_PRESENTATION_LINK = '<a href="#presentation">Presentation</a>';
 
+	let itemsAll = null;
+	this.getItemsAll = function(){ return itemsAll; }
+	let itemsHome = null;
+	this.getItemsHome = function(){ return itemsHome; }
+	let itemsPublication = null;
+	this.getItemsPublication = function(){ return itemsPublication; }
+	let itemsPackaging = null;
+	this.getItemsPackaging = function(){ return itemsPackaging; }
+	let itemsPresentation = null;
+	this.getItemsPresentation = function(){ return itemsPresentation; }
+
 	this.install = function()
 	{
 		this.container = document.querySelector('#gallery');
-
 		this.media = new Media();
 		this.media.install();
 	}
 
 	this.start = function()
 	{
+		itemsAll = this.media.sortByQuality(this.media.db);
+		itemsHome = itemsAll.slice(0, INDEX_MEDIA);
+		itemsPublication = this.media.filterByCategory(itemsAll, 'publication');
+		itemsPackaging = this.media.filterByCategory(itemsAll, 'packaging');
+		itemsPresentation = this.media.filterByCategory(itemsAll, 'presentation');
 		this.load();
 	}
 
@@ -32,38 +47,36 @@ function Index()
 
 		this.stylelinks(target);
 
-		if(target == 'all')
+		if (target == 'all')
 		{
-			let result = ``;
-			let items = this.media.sortByQuality(this.media.db);
-			for (let i = 0; i < items.length; i++)
-			{
-				result += items[i].html(0);
-			}
-			this.container.innerHTML = result;
+			this.displayContent(itemsAll);
 		}
-		else if(target == 'publication' || target == 'packaging' || target == 'presentation')
+		else if( target == 'publication')
 		{
-			let result = ``;
-			let items = this.media.sortByQuality(this.media.db);
-			items = this.media.filterByCategory(items, target);
-			for (let i = 0; i < items.length; i++)
-			{
-				result += items[i].html(0);
-			}
-			this.container.innerHTML = result;
+			this.displayContent(itemsPublication);
+		}
+		else if (target == 'packaging')
+		{
+			this.displayContent(itemsPackaging);
+		}
+		else if (target == 'presentation')
+		{
+			this.displayContent(itemsPresentation);
 		}
 		else
 		{
-			let result = ``;
-			let items = this.media.sortByQuality(this.media.db);
-			for (let i = 0; i < INDEX_MEDIA; i++)
-			{
-				result += items[i].html(0);
-			}
-			this.container.innerHTML = result;
+			this.displayContent(itemsHome);
 		}
+	}
 
+	this.displayContent = function(content)
+	{
+		let result = ``;
+		for (let i = 0; i < content.length; i++)
+		{
+			result += content[i].html(0);
+		}
+		this.container.innerHTML = result;
 	}
 
 	this.stylelinks = function(target)
@@ -77,7 +90,6 @@ function Index()
 		{
 			document.getElementById('header').innerHTML=HEADER_MAIN_LINK;
 			document.getElementById('header').className='';
-
 		}
 
 		if (target == 'publication')
