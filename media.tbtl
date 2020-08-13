@@ -12,42 +12,41 @@ F = Focus
 
 var MEDIA = `
 FILE              QF PROJECTCODE       CATEGORY                             DESCRIPTION                                                                                                                                                                                                                                                                                   END
-246Q_002.jpg      8C 246queen          publication, packaging, presentation Hello Sarah.
-246Q_004.jpg      7C 246queen          packaging                            Ignite the fire within and explore unknown territory. 
-246Q_005.jpg      6C 246queen          publication                          Carry bolt cutters everywhere. 
-246Q_007.jpg      7C 246queen          publication                          The truth of a thing is in the feel of it, not the think of it.
-246Q_011.jpg      6C 246queen          presentation                         Educate yourself, so you can be part of the conversation.
-246Q_013.jpg      6C 246queen          presentation                         The cave you fear to enter holds the treasure you seek.
-246Q_015.jpg      4C 246queen          publication                          Artists, I think that its a term is almost interchangable with magician.
-246Q_020.jpg      5C 246queen          presentation                         Our thoughts shape our spaces and our spaces return the favour.
-246Q_021.jpg      6C 246queen          presentation                         Just as you grow into the world, the world grows into you. Not only do you occupy a certain place, but that place, in turn, occupies you...
-246Q_024.jpg      8C 246queen          packaging                            We live in capitalism. Its power seems inescapable. So did the divine right of kings. Any human power can be resisted and changed by human beings.
+246Q_002.jpg      8C 246queen          publication, packaging, presentation collection for 246 Queen
+246Q_004.jpg      7C 246queen          packaging                            drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front 
+246Q_005.jpg      6C 246queen          publication                          singer sewn | soft cover 
+246Q_007.jpg      7C 246queen          publication                          singer sewn | soft cover 
+246Q_011.jpg      6C 246queen          presentation                         drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front
+246Q_013.jpg      6C 246queen          presentation                         drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front
+246Q_015.jpg      4C 246queen          publication                          singer sewn | soft cover 
+246Q_020.jpg      5C 246queen          presentation                         drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front
+246Q_021.jpg      6C 246queen          presentation                         drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front
+246Q_024.jpg      8C 246queen          packaging                            hinged box with die cut foam insert | three piece case in Colorplan | hidden magnet closure | foiled spine and front
 aalto_000.jpg     8C aalto             packaging                            Consciousness alone is.
-aalto_003.jpg     6C aalto             packaging                            Hedonic adaptation.
-aalto_004.jpg     6C aalto             packaging                            Eselsbruecke.
-aalto_005.jpg     7C aalto             packaging                            Gezellig.
-TTHC_003.jpg      8C rareHarvest       packaging                            We do not ‘come into’ this world; we come out of it, as leaves from a tree. As the ocean ‘waves,’ the universe ‘peoples.’ Every individual is an expression of the whole realm of nature, a unique action of the total universe.
-TTHC_004.jpg      6C rareHarvest       packaging                            The world is won by those who let it go.
-TTHC_007.jpg      4C rareHarvest       packaging                            Deep play.
-TTHC_010.jpg      7C rareHarvest       packaging                            Life should be lived to the point of tears.
-TTHC_012.jpg      6C rareHarvest       packaging                            Have you tried writing down everything you know about everything?
-TTHC_013.jpg      6C rareHarvest       packaging                            It is not the job of artists to give the audience what the audience wants. If the audience knew what they needed then they wouldn’t be audience, they would be the artists. It is the job of artists to give the audience what they need.
-jervois_000.jpg   9C jervois           publication                          This sense of first sight unencumbered by knowingness.
-jervois_001.jpg   6C jervois           publication                          For a transitory enchanted moment man must have held his breath in the presence of this continent, compelled into an aesthetic contemplation he neither understood nor desired, face to face for the last time in history with something commensurate to his capacity for wonder.
-jervois_002.jpg   5C jervois           publication                          Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future.
-jervois_003.jpg   8C jervois           publication                          As we got farther and farther away, the Earth diminished in size. Finally it shrank to the size of a marble, the most beauitful marble you can imagine... seeing this has to change a man.
-jervois_004.jpg   5C jervois           publication                          We’re Solarpunks because the only other options are denial or despair.
-jervois_005.jpg   3C jervois                                                Look again at that dot. Thats here. Thats home. Thats us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives.
-jervois_009.jpg   7C jervois           presentation                         Many have stood their ground and faced the darkness when it comes for them. Fewer come for the darkness and force it to face them.
-jervois_010.jpg   5C jervois           presentation                         Nature is not a place to visit. It is home.
-jervois_011.jpg   7C jervois           presentation                         There is no justice in the laws of nature, no term for fairness in the equations of motion. The Universe is neither evil, nor good, it simply does not care. The stars dont care, or the Sun, or the sky. But they dont have to! WE care! There IS light in the world, and it is US!
-outline_001.jpg   6C outline           publication                          And regardless of your skills and experience, it is likely that you are a magician to someone else.
-outline_005.jpg   5C outline           publication                          Beauty will save the world.
-outline_006.jpg   5C outline           publication                          Anti-fragility: a property of systems that increase in capability, resilience, or robustness as a result of stressors, shocks, volatility, noise, mistakes, faults, attacks, or failures.
-outline_007.jpg   7C outline           publication                          Be in this world but not of it.
-outline_011.jpg   6C outline           publication            
-elephant_000.jpg  8C oldElephantHouse  presentation          
-elephant_001.jpg  7C oldElephantHouse  presentation           
-elephant_002.jpg  7C oldElephantHouse  presentation           
-elephant_003.jpg  5C oldElephantHouse                                   
-`
+aalto_003.jpg     6C aalto             packaging                            two piece box with beveled lid | covered in _______ | die cut foam insert | foiled lid
+aalto_004.jpg     6C aalto             packaging                            two piece box with beveled lid | covered in _______ | die cut foam insert | foiled lid
+aalto_005.jpg     7C aalto             packaging                            two piece box with beveled lid | covered in _______ | die cut foam insert | foiled lid
+TTHC_003.jpg      8C rareHarvest       packaging                            five piece buckram case | die cut card inserts | hidden magnet closure | debossed branding 
+TTHC_004.jpg      6C rareHarvest       packaging                            five piece buckram case | die cut card inserts | hidden magnet closure | debossed branding
+TTHC_007.jpg      4C rareHarvest       packaging                            five piece buckram case | die cut card inserts | hidden magnet closure | debossed branding
+TTHC_010.jpg      7C rareHarvest       packaging                            five piece buckram case | die cut card inserts | hidden magnet closure | debossed branding
+TTHC_012.jpg      6C rareHarvest       packaging                            five piece buckram case | die cut card inserts | hidden magnet closure | debossed branding
+TTHC_013.jpg      6C rareHarvest       packaging                            five piece buckram case | die cut card inserts | hidden magnet closure | debossed branding
+jervois_000.jpg   9C jervois           publication                          section sewn | casebound in matte woven rayon | debossed front and foiled spine
+jervois_001.jpg   6C jervois           publication                          section sewn | casebound in matte woven rayon | debossed front and foiled spine
+jervois_002.jpg   5C jervois           publication                          section sewn | casebound in matte woven rayon | debossed front and foiled spine
+jervois_003.jpg   8C jervois           publication                          section sewn | casebound in matte woven rayon | debossed front and foiled spine
+jervois_004.jpg   5C jervois           publication                          section sewn | casebound in matte woven rayon | debossed front and foiled spine
+jervois_005.jpg   3C jervois                                                deboss for 113 Jervios Road
+jervois_009.jpg   7C jervois           presentation                         drop spine three side ringbinder for loop stitching | four piece case in _________ | hidden magnet closure | foiled spine and front 
+jervois_010.jpg   5C jervois           presentation                         drop spine three side ringbinder for loop stitching | four piece case in _________ | hidden magnet closure | foiled spine and front 
+jervois_011.jpg   7C jervois           presentation                         drop spine three side ringbinder for loop stitching | four piece case in _________ | hidden magnet closure | foiled spine and front 
+outline_001.jpg   6C outline           publication                          singer sewn | soft cover
+outline_005.jpg   5C outline           publication                          singer sewn | soft cover
+outline_006.jpg   5C outline           publication                          singer sewn | soft cover
+outline_007.jpg   7C outline           publication                          singer sewn | soft cover
+outline_011.jpg   6C outline           publication                          singer sewn | soft cover
+elephant_000.jpg  8C oldElephantHouse  presentation                         elastic fastened menu board in printed buckram 
+elephant_001.jpg  7C oldElephantHouse  presentation                         elastic fastened menu board in printed buckram
+elephant_002.jpg  7C oldElephantHouse  presentation                         elastic fastened menu board in printed buckram
+elephant_003.jpg  5C oldElephantHouse                                       Old Elephant House, Auckland Zoo
