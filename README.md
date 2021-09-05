@@ -2,7 +2,7 @@
 
 # Portfolio
 
-This is a portfolio website for Sarah Tanfield - a New Zealand book binder and package maker.
+This is a portfolio website for Sarah Tanfield - a New Zealand bookbinder and structural packaging maker.
 
 ## Services
 
@@ -11,11 +11,11 @@ This is a portfolio website for Sarah Tanfield - a New Zealand book binder and p
 `Vercel` is your the host of your website. When people enter your domain name url in their browser, Vercel sends them your website files.
 `Github` is an online thing for Git. By default Git is just local to your computer, or you need to set up your own Git server.
 
-## How to edit
+## How to edit the website
 
 Edit `media.tbtl` database or `index.html`.
 
-## How to test
+## How to test the website
 
 Open `index.html` in a browser.
 
@@ -37,9 +37,9 @@ Open `index.html` in a browser.
 
 ## If things go wrong with Vercel
 
+- It asks if you want to deploy. Yes. It'll ask which user, pick `swan` (it's a team so Hamish can access it too), then pick project `sarah`.
 - You might need to update. To update type: `npm i -g vercel@latest`.
 - You might need to log in. To log in type: `vercel login`.
-- If there is an error `npm WARN checkPermissions Missing write access to...`, type `sudo chown -R $USER /usr/local/lib/node_modules` and re-run the last thing you tried to do.
 
 ## To do
 - BUG: linux? does not show prev icon, instead shows next for both

@@ -12,13 +12,16 @@ F = Focus
 
 var MEDIA = `
 FILE              QF PROJECTCODE       CATEGORY                             DESCRIPTION                                                                                                                                                                                                                                                                                   END
+Taonga01.jpg      9C taonga            packaging                            tray and lid with locator | casebound in matte woven rayon  | foiled lid
+Taonga02.jpg      9C taonga            packaging                            tray and lid with locator | casebound in matte woven rayon  | foiled lid
+Taonga03.jpg      9C taonga            packaging                            tray and lid with locator | casebound in matte woven rayon  | foiled lid
 246Q_002.jpg      8C 246queen          publication, packaging, presentation collection for 246 Queen
-246Q_004.jpg      7C 246queen          packaging                            drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front 
-246Q_005.jpg      6C 246queen          publication                          singer sewn | soft cover 
-246Q_007.jpg      7C 246queen          publication                          singer sewn | soft cover 
+246Q_004.jpg      7C 246queen          packaging                            drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front
+246Q_005.jpg      6C 246queen          publication                          singer sewn | soft cover
+246Q_007.jpg      7C 246queen          publication                          singer sewn | soft cover
 246Q_011.jpg      6C 246queen          presentation                         drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front
 246Q_013.jpg      6C 246queen          presentation                         drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front
-246Q_015.jpg      4C 246queen          publication                          singer sewn | soft cover 
+246Q_015.jpg      4C 246queen          publication                          singer sewn | soft cover
 246Q_020.jpg      5C 246queen          presentation                         drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front
 246Q_021.jpg      6C 246queen          presentation                         drop spine three side ringbinder | four piece case in Colorplan | hidden magnet closure | foiled spine and front
 246Q_024.jpg      8C 246queen          packaging                            hinged box with die cut foam insert | three piece case in Colorplan | hidden magnet closure | foiled spine and front
@@ -37,16 +40,16 @@ jervois_001.jpg   6C jervois           publication                          sect
 jervois_002.jpg   5C jervois           publication                          section sewn | casebound in matte woven rayon | debossed front and foiled spine
 jervois_003.jpg   8C jervois           publication                          section sewn | casebound in matte woven rayon | debossed front and foiled spine
 jervois_004.jpg   5C jervois           publication                          section sewn | casebound in matte woven rayon | debossed front and foiled spine
-jervois_005.jpg   3C jervois                                                deboss for 113 Jervios Road
-jervois_009.jpg   7C jervois           presentation                         drop spine three side ringbinder for loop stitching | four piece case in plush | hidden magnet closure | foiled spine and front 
-jervois_010.jpg   5C jervois           presentation                         drop spine three side ringbinder for loop stitching | four piece case in plush | hidden magnet closure | foiled spine and front 
-jervois_011.jpg   7C jervois           presentation                         drop spine three side ringbinder for loop stitching | four piece case in plush | hidden magnet closure | foiled spine and front 
+jervois_005.jpg   3C jervois                                                deboss for 113 Jervois Road
+jervois_009.jpg   7C jervois           presentation                         drop spine three side ringbinder for loop stitching | four piece case in plush | hidden magnet closure | foiled spine and front
+jervois_010.jpg   5C jervois           presentation                         drop spine three side ringbinder for loop stitching | four piece case in plush | hidden magnet closure | foiled spine and front
+jervois_011.jpg   7C jervois           presentation                         drop spine three side ringbinder for loop stitching | four piece case in plush | hidden magnet closure | foiled spine and front
 outline_001.jpg   6C outline           publication                          singer sewn | soft cover
 outline_005.jpg   5C outline           publication                          singer sewn | soft cover
 outline_006.jpg   5C outline           publication                          singer sewn | soft cover
 outline_007.jpg   7C outline           publication                          singer sewn | soft cover
 outline_011.jpg   6C outline           publication                          singer sewn | soft cover
-elephant_000.jpg  8C oldElephantHouse  presentation                         elastic fastened menu board in printed buckram 
+elephant_000.jpg  8C oldElephantHouse  presentation                         elastic fastened menu board in printed buckram
 elephant_001.jpg  7C oldElephantHouse  presentation                         elastic fastened menu board in printed buckram
 elephant_002.jpg  7C oldElephantHouse  presentation                         elastic fastened menu board in printed buckram
 elephant_003.jpg  5C oldElephantHouse                                       Old Elephant House, Auckland Zoo
