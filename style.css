@@ -20,6 +20,13 @@
   --size-border: 10px;
 }
 
+@font-face {
+  font-family: 'Eina03-Regular';
+  src: url('eina-03-regular.woff2') format('woff2'),
+       url('eina-03-regular.woff') format('woff'),
+       url('eina-03-regular.ttf')  format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +37,7 @@
 body {
   background-color: var(--color-background);
   color: var(--color-primary);
-  font-family: 'Eina03-Regular', sans-serif;
+  font-family: 'Eina03-Regular';
   font-weight: 100;
   font-size: var(--font-normal);
 }

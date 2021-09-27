@@ -5,8 +5,8 @@ function Index()
 	const INDEX_MEDIA = 8;
 	const HEADER_MAIN_STATIC = 'sarah tanfield';
 	const HEADER_MAIN_LINK = '<a href="#">sarah tanfield</a>';
-	const HEADER_PUBLICATION_STATIC = 'publication';
-	const HEADER_PUBLICATION_LINK = '<a href="#publication">publication</a>';
+	const HEADER_PUBLICATION_STATIC = 'publications';
+	const HEADER_PUBLICATION_LINK = '<a href="#publication">publications</a>';
 	const HEADER_PACKAGING_STATIC = 'packaging';
 	const HEADER_PACKAGING_LINK = '<a href="#packaging">packaging</a>';
 	const HEADER_PRESENTATION_STATIC = 'presentation';
