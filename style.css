@@ -14,7 +14,7 @@
   --size-grid-height: 30vh;
 
   --font-small: 0.7em;
-  --font-normal: 1.5em;
+  --font-normal: 1.4em;
   --font-large: 2em;
 
   --size-border: 10px;
@@ -30,7 +30,7 @@
 body {
   background-color: var(--color-background);
   color: var(--color-primary);
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Eina03-Regular', sans-serif;
   font-weight: 100;
   font-size: var(--font-normal);
 }
@@ -63,7 +63,7 @@ nav {
   margin-right: var(--size-columnPaddingMedium);
   font-weight: 600;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 830px) {
   nav {
     margin-top: var(--size-columnPaddingMedium);
     float: left;
