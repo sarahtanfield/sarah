@@ -63,7 +63,7 @@ nav {
   margin-right: var(--size-columnPaddingMedium);
   font-weight: 600;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   nav {
     margin-top: var(--size-columnPaddingMedium);
     float: left;
